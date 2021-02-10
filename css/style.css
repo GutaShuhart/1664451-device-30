@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/gilroyextrabold.woff"),
+      url("../fonts/gilroyextrabold.woff2"),
+      url("gilroyextrabold.woff2") format("woff2"),
+      url("gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/gilroylight.woff"),
+       url("../fonts/gilroylight.woff2"),
+       url("gilroylight.woff2") format("woff2"),
+       url("gilroylight.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/opensans.woff"),
+       url("../fonts/opensans.woff2"),
+       url("opensans.woff2") format("woff2"),
+       url("opensans.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";  /*нужно подключить универсальные шрифты, почемк-то не получилось*/
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff"),
+       url("../fonts/opensanslight.woff2"),
+       url("opensanslight.woff2") format("woff2"),
+       url("opensanslight.woff") format("woff");
+}
+
+:root{
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-grey:#464646;
+  --basic-half-grey:#7E7E7E;
+  --basic-grey-light:#E5E5E5;
+  --basic-white:#FFFFFF;
+  --special-yellow-dark:#F7E296;
+  --special-yellow-light:#F7E296;
+  --special-green:#91C92F;
+  --status-pink-light:#F6DADA;;
+}
+/*разобраться с кастомными цветами, совсем не поняла как пользоваться*/
+
+
+
+a {
+  text-decoration: none; /* Знаю что так нельзя по критериям, каждую ссылку вручную убирать? */
+  color:black;
+ }
+
+.main-header{
+  background-color: var(--special-yellow-dark) ;
+}
+
+.main-footer{
+  background-color:var(--basic-dark);
+}
+
+.features{
+  background-colo:var(--basic-grey-light);
+}
+
+.search{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 20px;
+color:#000000;
+opacity: 0,3;
+}
+
+
+
+.navigation {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color:#000000;
+}
+
+.subtitle-uppercase{
+font-family: "Gilroy";
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+
+}
+.number{
+font-family: "Gilroy";
+font-style: normal;
+font-weight: 800;
+font-size: 179px;
+line-height: 219px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.slider-caption{
+font-family: "Gilroy";
+font-style: normal;
+font-weight: 800;
+font-size: 47px;
+line-height: 58px;
+color: #000000;
+}
+
+.section-caption{
+font-family: "Gilroy";
+font-style: normal;
+font-weight: 800;
+font-size: 47px;
+line-height: 58px;
+letter-spacing: 0.2em;
+color: #000000;
+}
+
+.catalog{
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+
+}
+.text{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 20px;
+color: #000000;
+}
+
+.table-header{
+font-family: "Gilroy";
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.1em;
+color: #000000;
+
+}
+.table-row{
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #000000;
+
+}
+
+.appointment,
+.subtitle{
+font-family: "Gilroy";
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+}
+
+.selected-text{
+font-family: "Gilroy";
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 28px;
+color: #000000;
+}
+
+.footer-address,
+.contacts-phone {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color:white;
+
+}
+
+
+
+.placeholder{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: rgba(0, 0, 0, 0.4);
+
+}
+
+.nav-footer{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.subtitle-uppercase-footer{
+  color:white;
+}
+
+/* User navigation */
+
+.hover:hover{
+  opacity: 0.6;
+}
+
+.focus:focus{
+  opacity: 0.3;
+}
+
+.search-hover:hover{
+  opacity: 0.6;
+
+}
+.search-focus:focus{
+  color: #000;
+}
+.search-button {
+font-family: Open Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 20px;
+text-transform: uppercase;
+color: #000000;
+background-color:  #F7E296;
+}
+
+.search-button-hover:hover{
+  color: #FFFFFF;
+  background-color:black;
+
+}
+
+.search-button-focus:focus{
+color: rgba(255, 255, 255, 0.3);
+background-color:black;
+}
