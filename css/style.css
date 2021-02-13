@@ -1,64 +1,73 @@
 @font-face {
-  font-family: "Gilroy";
-  font-weight: 800;
-  font-style: normal;
-  src: url("../fonts/gilroyextrabold.woff"),
-      url("../fonts/gilroyextrabold.woff2"),
-      url("gilroyextrabold.woff2") format("woff2"),
-      url("gilroyextrabold.woff") format("woff");
+ font-family: "Gilroy";
+ font-weight: 800;
+ font-style: normal;
+ src: url("../fonts/gilroyextrabold.woff"),
+   url("../fonts/gilroyextrabold.woff2"),
+   url("../fonts/gilroyextrabold.woff2") format("woff2"),
+   url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Gilroy";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../fonts/gilroylight.woff"),
-       url("../fonts/gilroylight.woff2"),
-       url("gilroylight.woff2") format("woff2"),
-       url("gilroylight.woff") format("woff");
+ font-family: "Gilroy";
+ font-weight: 300;
+ font-style: normal;
+ src: url("../fonts/gilroylight.woff"),
+    url("../fonts/gilroylight.woff2"),
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
 }
 @font-face {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/opensans.woff"),
-       url("../fonts/opensans.woff2"),
-       url("opensans.woff2") format("woff2"),
-       url("opensans.woff") format("woff");
+ font-family: "Open Sans";
+ font-weight: 400;
+ font-style: normal;
+ src: url("../fonts/opensans.woff"),
+    url("../fonts/opensans.woff2"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
 }
 @font-face {
-  font-family: "Open Sans";  /*нужно подключить универсальные шрифты, почемк-то не получилось*/
-  font-weight: 300;
-  font-style: normal;
-  src: url("../fonts/opensanslight.woff"),
-       url("../fonts/opensanslight.woff2"),
-       url("opensanslight.woff2") format("woff2"),
-       url("opensanslight.woff") format("woff");
+ font-family: "Open Sans";
+ font-weight: 300;
+ font-style: normal;
+ src: url("../fonts/opensanslight.woff"),
+    url("../fonts/opensanslight.woff2"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
 }
 
 :root{
-  --basic-black: #000000;
-  --basic-dark: #363636;
-  --basic-grey:#464646;
-  --basic-half-grey:#7E7E7E;
-  --basic-grey-light:#E5E5E5;
-  --basic-white:#FFFFFF;
-  --special-yellow-dark:#F7E296;
-  --special-yellow-light:#F7E296;
-  --special-green:#91C92F;
-  --status-pink-light:#F6DADA;;
+ --basic-black: #000000;
+ --basic-dark: #363636;
+ --basic-grey:#464646;
+ --basic-half-grey:#7E7E7E;
+ --basic-grey-light:#E5E5E5;
+ --grey-form-light:#F2F2F2;
+ --grey-form-dark:#EAEAEA;
+ --grey-form-text:#8C8C8C;
+ --basic-white:#FFFFFF;
+ --special-yellow-dark:#F0C52E;
+ --special-yellow-light:#F7E296;
+ --special-green:#91C92F;
+ --status-pink-light:#F6DADA;;
 }
-/*разобраться с кастомными цветами, совсем не поняла как пользоваться*/
 
+.page-body{
+ font-family: "Open Sans", Arial, sans-serif;
+ font-style: normal;
+ font-weight: 300;
+ font-size: 15px;
+ line-height: 20px;
+ color:var(--basic-black);
+}
 
-
-a {
-  text-decoration: none; /* Знаю что так нельзя по критериям, каждую ссылку вручную убирать? */
-  color:black;
- }
+.link {
+  text-decoration: none;
+  color:var(--basic-black);
+}
 
 .main-header{
-  background-color: var(--special-yellow-dark) ;
+  background-color: var(--special-yellow-light) ;
 }
 
 .main-footer{
@@ -66,193 +75,222 @@ a {
 }
 
 .features{
-  background-colo:var(--basic-grey-light);
+  background-color:var(--basic-grey-light);
 }
 
-.search{
-font-family: "Open Sans";
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 20px;
-color:#000000;
-opacity: 0,3;
-}
-
-
-
-.navigation {
-  font-family: "Open Sans";
+.search-site {
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  color:#000000;
+  opacity: 0,3;
+  background-color:var(--special-yellow-light);
+  border:none;
 }
 
-.subtitle-uppercase{
-font-family: "Gilroy";
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 22px;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-
+.catalog ul,
+.catalog,
+.services,
+.slider-buttons,
+.features ul,
+.company-logo ul,
+.about-us ul,
+.social ul,
+.footer-features ul,
+.social a{
+  list-style: none;
 }
-.number{
-font-family: "Gilroy";
-font-style: normal;
-font-weight: 800;
-font-size: 179px;
-line-height: 219px;
-text-transform: uppercase;
-color: #FFFFFF;
+
+.menu,
+.button-detail,
+.features ul,
+.footer-features a,
+.appointment-button{
+ font-family: "Gilroy";
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 22px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+}
+
+.slider-count{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+  color:var(--basic-white);
 }
 
 .slider-caption{
-font-family: "Gilroy";
-font-style: normal;
-font-weight: 800;
-font-size: 47px;
-line-height: 58px;
-color: #000000;
+ font-family: "Gilroy", Arial, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 47px;
+ line-height: 58px;
+ color:var(--basic-black);
 }
 
-.section-caption{
-font-family: "Gilroy";
-font-style: normal;
-font-weight: 800;
-font-size: 47px;
-line-height: 58px;
-letter-spacing: 0.2em;
-color: #000000;
+.features h3,
+.about-us h2,
+.contacts h2{
+ font-family: "Gilroy", Arial, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 47px;
+ line-height: 58px;
+ letter-spacing: 0.2em;
+ color:var(--basic-black);
 }
 
-.catalog{
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-  color: #000000;
-
-}
-.text{
-font-family: "Open Sans";
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 20px;
-color: #000000;
-}
 
 .table-header{
-font-family: "Gilroy";
-font-style: normal;
-font-weight: 300;
-font-size: 36px;
-line-height: 42px;
-letter-spacing: 0.1em;
-color: #000000;
+ font-family: "Gilroy", Arial, sans-serif;
+ font-style: normal;
+ font-weight: 300;
+ font-size: 36px;
+ line-height: 42px;
+ letter-spacing: 0.1em;
+ color: var(--basic-black);
 
 }
 .table-row{
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  color: #000000;
+ font-family: "Gilroy", Arial, sans-serif;
+ font-style: normal;
+ font-weight: 300;
+ font-size: 13px;
+ line-height: 15px;
+ color: var(--basic-black);
+ letter-spacing: 0.1em;
 
 }
 
 .appointment,
 .subtitle{
-font-family: "Gilroy";
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 22px;
-color: #000000;
+ font-family: "Gilroy", Arial, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 18px;
+ line-height: 22px;
+ color: var(--basic-black);
 }
 
-.selected-text{
-font-family: "Gilroy";
-font-style: normal;
-font-weight: 800;
-font-size: 16px;
-line-height: 28px;
-color: #000000;
+.transport-company{
+ font-family: "Gilroy", Arial, sans-serif;
+ font-style: normal;
+ font-weight: 800;
+ font-size: 16px;
+ line-height: 28px;
+ color: var(--basic-black);
 }
+
+
 
 .footer-address,
-.contacts-phone {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-  color:white;
-
+.contacts-phone,
+.footer-features a,
+.social a{
+ color:var(--basic-white);
 }
 
 
+.appointment-name,
+.appointment-email,
+.appointment-text{
+ font-weight: normal;
+ font-family: "Open Sans", Arial, sans-serif;
+ font-style: normal;
+ font-size: 14px;
+ line-height: 19px;
+ color:var(--grey-form-text);
+ background: var(--grey-form-dark);
 
-.placeholder{
-font-family: "Open Sans";
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 19px;
-color: rgba(0, 0, 0, 0.4);
+}
 
+.services-background{
+ background-color: var(--special-yellow-light);
+ width: 160px;
+ height: 160px;
 }
 
 .nav-footer{
-  color: rgba(255, 255, 255, 0.7);
+ color:var(--basic-white);
+ opacity: 0.7;
 }
 
-.subtitle-uppercase-footer{
-  color:white;
-}
+
+
+.search-button {
+ text-transform: uppercase;
+ color:var(--basic-black);
+ background-color: var(--special-yellow-light);
+ }
 
 /* User navigation */
 
-.hover:hover{
-  opacity: 0.6;
+
+.appointment-name:hover,
+.appointment-email:hover,
+.appointment-text:hover{
+ background-color: var(--basic-grey-light);
+}
+.appointment-name:focus,
+.appointment-email:focus,
+.appointment-text:focus{
+ background-color:var(--basic-white);
 }
 
-.focus:focus{
-  opacity: 0.3;
+
+.opacity-hover:hover{
+ opacity: 0.6;
 }
 
-.search-hover:hover{
-  opacity: 0.6;
-
-}
-.search-focus:focus{
-  color: #000;
-}
-.search-button {
-font-family: Open Sans;
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 20px;
-text-transform: uppercase;
-color: #000000;
-background-color:  #F7E296;
+.opacity-active:active,
+.services img:active,
+.subtitle:active{
+ opacity: 0.3;
 }
 
-.search-button-hover:hover{
-  color: #FFFFFF;
-  background-color:black;
+.features a:active{
+ color: var(--special-yellow-light);
+}
+
+
+.services-background:active{
+ background:var(--special-yellow-dark);
+}
+
+.services-background:hover{
+ background:var(--special-yellow-dark);
+}
+
+.social .opacity-hover:hover{
+ opacity: 0.1;
+}
+
+
+.search-site:hover{
+ opacity: 0,6;
+}
+
+
+.search-site:focus{
+ color:var(--basic-black);
+}
+
+
+.search-button:hover{
+ color: var(--basic-white);
+ background-color:var( --basic-black);
 
 }
 
-.search-button-focus:focus{
-color: rgba(255, 255, 255, 0.3);
-background-color:black;
+.search-button:active{
+ color: var(--basic-grey-light);
+ background-color:var( --basic-black);
 }
+
