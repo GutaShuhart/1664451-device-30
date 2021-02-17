@@ -1,10 +1,10 @@
+/* Fonts*/
+
 @font-face {
  font-family: "Gilroy";
  font-weight: 800;
  font-style: normal;
- src: url("../fonts/gilroyextrabold.woff"),
-   url("../fonts/gilroyextrabold.woff2"),
-   url("../fonts/gilroyextrabold.woff2") format("woff2"),
+ src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
    url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
@@ -12,45 +12,47 @@
  font-family: "Gilroy";
  font-weight: 300;
  font-style: normal;
- src: url("../fonts/gilroylight.woff"),
-    url("../fonts/gilroylight.woff2"),
-    url("../fonts/gilroylight.woff2") format("woff2"),
+ src: url("../fonts/gilroylight.woff2") format("woff2"),
     url("../fonts/gilroylight.woff") format("woff");
 }
 @font-face {
  font-family: "Open Sans";
  font-weight: 400;
  font-style: normal;
- src: url("../fonts/opensans.woff"),
-    url("../fonts/opensans.woff2"),
-    url("../fonts/opensans.woff2") format("woff2"),
+ src: url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
 }
 @font-face {
  font-family: "Open Sans";
  font-weight: 300;
  font-style: normal;
- src: url("../fonts/opensanslight.woff"),
-    url("../fonts/opensanslight.woff2"),
-    url("../fonts/opensanslight.woff2") format("woff2"),
+ src: url("../fonts/opensanslight.woff2") format("woff2"),
     url("../fonts/opensanslight.woff") format("woff");
 }
+
+/* Variables */
 
 :root{
  --basic-black: #000000;
  --basic-dark: #363636;
  --basic-grey:#464646;
+ --grey-search-button:#4C4C4C;
  --basic-half-grey:#7E7E7E;
  --basic-grey-light:#E5E5E5;
  --grey-form-light:#F2F2F2;
+ --grey-filter-header:#DCDCDC;
  --grey-form-dark:#EAEAEA;
  --grey-form-text:#8C8C8C;
+ --grey-catalog-navigation:#EBEBEB;
+ --grey-navigation-effect:#D9D9D9;
  --basic-white:#FFFFFF;
  --special-yellow-dark:#F0C52E;
  --special-yellow-light:#F7E296;
  --special-green:#91C92F;
  --status-pink-light:#F6DADA;;
 }
+
+/* Global */
 
 .page-body{
  font-family: "Open Sans", Arial, sans-serif;
@@ -66,29 +68,6 @@
   color:var(--basic-black);
 }
 
-.main-header{
-  background-color: var(--special-yellow-light) ;
-}
-
-.main-footer{
-  background-color:var(--basic-dark);
-}
-
-.features{
-  background-color:var(--basic-grey-light);
-}
-
-.search-site {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-  opacity: 0,3;
-  background-color:var(--special-yellow-light);
-  border:none;
-}
-
 .catalog ul,
 .catalog,
 .services,
@@ -102,18 +81,70 @@
   list-style: none;
 }
 
+
 .menu,
-.button-detail,
 .features ul,
 .footer-features a,
 .appointment-button{
- font-family: "Gilroy";
+ font-family: "Gilroy" ,Arial, sans-serif;
  font-style: normal;
  font-weight: 800;
  font-size: 18px;
  line-height: 22px;
  letter-spacing: 0.2em;
  text-transform: uppercase;
+}
+
+
+
+/* Header */
+
+.main-header{
+  background-color: var(--special-yellow-light) ;
+}
+
+/* search */
+
+.search-site {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0,3;
+  background-color:var(--special-yellow-light);
+  border:none;
+}
+
+.search-site:hover{
+  opacity: 0.6;
+ }
+
+.search-site:focus{
+  color:var(--basic-black);
+ }
+
+.search-button {
+  text-transform: uppercase;
+  color:var(--basic-black);
+  background-color: var(--special-yellow-light);
+  }
+
+.search-button:hover{
+  color: var(--basic-white);
+  background-color:var( --basic-black);
+
+ }
+.search-button:active{
+  color: var(--grey-search-button);
+  background-color:var( --basic-black);
+ }
+
+
+/* Slider */
+
+.features{
+  background-color:var(--basic-grey-light);
 }
 
 .slider-count{
@@ -122,175 +153,498 @@
   font-weight: 800;
   font-size: 179px;
   line-height: 219px;
-  text-transform: uppercase;
   color:var(--basic-white);
 }
 
 .slider-caption{
- font-family: "Gilroy", Arial, sans-serif;
- font-style: normal;
- font-weight: 800;
- font-size: 47px;
- line-height: 58px;
- color:var(--basic-black);
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  color:var(--basic-black);
 }
-
-.features h3,
-.about-us h2,
-.contacts h2{
- font-family: "Gilroy", Arial, sans-serif;
- font-style: normal;
- font-weight: 800;
- font-size: 47px;
- line-height: 58px;
- letter-spacing: 0.2em;
- color:var(--basic-black);
-}
-
 
 .table-header{
- font-family: "Gilroy", Arial, sans-serif;
- font-style: normal;
- font-weight: 300;
- font-size: 36px;
- line-height: 42px;
- letter-spacing: 0.1em;
- color: var(--basic-black);
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+ }
 
-}
 .table-row{
- font-family: "Gilroy", Arial, sans-serif;
- font-style: normal;
- font-weight: 300;
- font-size: 13px;
- line-height: 15px;
- color: var(--basic-black);
- letter-spacing: 0.1em;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--basic-black);
+  letter-spacing: 0.1em;
+ }
 
+.features a{
+  background-color:var(--special-yellow-dark);
 }
 
-.appointment,
-.subtitle{
- font-family: "Gilroy", Arial, sans-serif;
- font-style: normal;
- font-weight: 800;
- font-size: 18px;
- line-height: 22px;
- color: var(--basic-black);
+.features a:hover{
+  background-color:var(--special-yellow-dark);
 }
+
+.features a:active{
+  background-color:var(--basic-black);
+}
+
+
+.features a:active{
+  color: var(--special-yellow-light);
+ }
+
+
+
+ /* Features */
+
+.services-link{
+  display:block;
+}
+
+.services-link:hover .services-background{
+  background-color:var(--special-yellow-dark);
+}
+
+.services-link:active img,
+.services-link:active .services-subtitle{
+  opacity: 0.3;
+}
+
+.services-background{
+  background-color: var(--special-yellow-light);
+  width: 160px;
+  height: 160px;
+ }
+
+
+  /* About us , Contakts */
 
 .transport-company{
- font-family: "Gilroy", Arial, sans-serif;
- font-style: normal;
- font-weight: 800;
- font-size: 16px;
- line-height: 28px;
- color: var(--basic-black);
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--basic-black);
+ }
+
+
+  /* Footer */
+
+.main-footer{
+  background-color:var(--basic-dark);
 }
 
+.nav-footer{
+  color:var(--basic-white);
+  opacity: 0.7;
+ }
 
+.nav-footer:hover{
+  opacity: 1;
+ }
+
+ .nav-footer:active{
+  opacity: 0.3;
+ }
 
 .footer-address,
 .contacts-phone,
 .footer-features a,
 .social a{
- color:var(--basic-white);
+  color:var(--basic-white);
 }
 
+
+ /* Social button */
+.social-button{
+  opacity: 0.3;
+ }
+
+ .social-button:hover{
+  opacity: 0.6;
+ }
+
+.social-button:active{
+  opacity: 0.1;
+ }
+
+ /* Modal */
 
 .appointment-name,
 .appointment-email,
 .appointment-text{
- font-weight: normal;
- font-family: "Open Sans", Arial, sans-serif;
- font-style: normal;
- font-size: 14px;
- line-height: 19px;
- color:var(--grey-form-text);
- background: var(--grey-form-dark);
-
-}
-
-.services-background{
- background-color: var(--special-yellow-light);
- width: 160px;
- height: 160px;
-}
-
-.nav-footer{
- color:var(--basic-white);
- opacity: 0.7;
-}
-
-
-
-.search-button {
- text-transform: uppercase;
- color:var(--basic-black);
- background-color: var(--special-yellow-light);
+  font-weight: normal;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color:var(--grey-form-text);
+  background-color: var(--grey-form-dark);
  }
-
-/* User navigation */
-
 
 .appointment-name:hover,
 .appointment-email:hover,
 .appointment-text:hover{
- background-color: var(--basic-grey-light);
+  background-color: var(--basic-grey-light);
 }
+
 .appointment-name:focus,
 .appointment-email:focus,
 .appointment-text:focus{
- background-color:var(--basic-white);
+  background-color:var(--basic-white);
+}
+
+.button-closed{
+  background-color:var(--special-yellow-dark);
+  opacity: 0.5;
+}
+
+.button-closed:active{
+  opacity: 0.3;
+ }
+
+
+
+/* Common */
+
+.appointment,
+.services-subtitle{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--basic-black);
+}
+
+
+.features h3,
+.about-us h2,
+.contacts h2{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  color:var(--basic-black);
 }
 
 
 .opacity-hover:hover{
- opacity: 0.6;
+  opacity: 0.6;
 }
 
-.opacity-active:active,
-.services img:active,
-.subtitle:active{
- opacity: 0.3;
-}
-
-.features a:active{
- color: var(--special-yellow-light);
+.opacity-active:active{
+  opacity: 0.3;
 }
 
 
-.services-background:active{
- background:var(--special-yellow-dark);
+.button-closed:hover{
+  opacity: 1;
+ }
+
+/*Catalog*/
+
+.page-title{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  color: var(--basic-black);
 }
 
-.services-background:hover{
- background:var(--special-yellow-dark);
+.catalog-item img:hover{
+  opacity: 0.7;
 }
 
-.social .opacity-hover:hover{
- opacity: 0.1;
+/* Breadcrumbs */
+
+.breadcrumbs a,
+.breadcrumbs-current{
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba( 0,0,0,0.3);
+
+}
+.breadcrumbs a:hover{
+  color: rgba( 0,0,0,0.6);
+}
+
+.breadcrumbs a:active{
+  color: rgba( 0,0,0,0.1);
+}
+
+.breadcrumbs li,
+.filter ul,
+.catalog-list ul,
+.navigation ul{
+  list-style: none;
+}
+
+/* Filter */
+
+.filter h2{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--grey-filter-header);
+  height: 70px;
+  width: 468px;
+}
+
+.filter legend{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+}
+
+.filter label,
+.filter span{
+  font-family: "Open Sans",Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--basic-black);
+}
+
+.filter form{
+  background-color: var(--basic-grey-light);
 }
 
 
-.search-site:hover{
- opacity: 0,6;
-}
-
-
-.search-site:focus{
- color:var(--basic-black);
-}
-
-
-.search-button:hover{
- color: var(--basic-white);
- background-color:var( --basic-black);
+.filter-input-checkbox{
 
 }
 
-.search-button:active{
- color: var(--basic-grey-light);
- background-color:var( --basic-black);
+.filter-input-checkbox:hover,
+.filter-input-radio:hover {
+  opacity: 0.6;
 }
+
+
+.filter-input-checkbox:active,
+.filter-input-radio:active {
+  opacity: 1;
+}                                     /*не знаю что сюда, надо убрать синий фон и цвет галочки изменить,
+откуда-то наследуется другой стиль*/
+
+
+.style-button{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color:var(--special-yellow-dark);
+  width: 160px;
+  height: 8px;
+}
+
+/* Sorting */
+
+.sorting{
+  background-color: var(--basic-grey-light);
+}
+
+.sorting h2{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.sorting ul{
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--basic-black);
+  list-style: none;
+  text-decoration: none;
+}
+.sorting a,
+.catalog-item a,
+.navigation a{
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.sorting-inactivated{
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.sorting-inactivated:hover{
+  opacity: 0.6;
+}
+
+.sorting-inactivated:active{
+  opacity:1;
+}
+
+.button-sorting-up{
+  opacity: 0.2;
+}
+
+.button-sorting-down{
+  opacity: 1;
+}
+
+.button-sorting-up:hover,
+.button-sorting-down:hover{
+  opacity: 0.4;
+}
+
+.button-sorting-up:active,
+.button-sorting-down:active{
+  opacity:1;
+}
+
+
+
+
+/* Catalog */
+
+.catalog-item h3{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: var(--basic-black);
+}
+
+.catalog-price{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: var(--basic-black);
+}
+
+.catalog-new{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-compare{
+  font-family: "Open Sans",Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+  opacity: 0.5;
+}
+
+
+.catalog-compare:hover{
+  opacity:1;
+}
+
+.catalog-compare:active{
+  opacity: 0.3;
+}
+
+.button-basket:hover,
+.button-detail:hover{
+
+}
+
+.button-basket:active,
+.button-detail:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Catalog navigation */
+
+.navigation{
+  font-family: "Gilroy",Arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color:var(--grey-catalog-navigation);
+
+}
+
+.navigation-inactivated{
+  opacity:0.3;
+}
+
+.navigation-back:hover{
+width: 120px;
+height: 70px;
+background-color:var(--grey-navigation-effect);
+}
+
+.navigation-back:active,
+.navigation-forvard:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.navigation-forvard:hover{
+  width: 120px;
+  height: 70px;
+  background-color:var(--grey-navigation-effect);
+}
+
+
+
+.navigation-inactivated:hover{
+  opacity:0.6;
+}
+
+.navigation-inactivated:active{
+  opacity:1;
+}
+
+/*footer*/
+
 
