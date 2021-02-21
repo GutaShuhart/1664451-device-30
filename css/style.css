@@ -309,6 +309,10 @@
   opacity: 0.5;
 }
 
+.button-closed:hover{
+  opacity: 1;
+ }
+
 .button-closed:active{
   opacity: 0.3;
  }
@@ -350,9 +354,7 @@
 }
 
 
-.button-closed:hover{
-  opacity: 1;
- }
+
 
 /*Catalog*/
 
@@ -450,8 +452,7 @@
 .filter-input-checkbox:active,
 .filter-input-radio:active {
   opacity: 1;
-}                                     /*не знаю что сюда, надо убрать синий фон и цвет галочки изменить,
-откуда-то наследуется другой стиль*/
+}
 
 
 .style-button{
@@ -502,16 +503,19 @@
   text-decoration: none;
 }
 
-.sorting-inactivated{
+.sorting-popular,
+.sorting-type{
   color: var(--basic-black);
   opacity: 0.3;
 }
 
-.sorting-inactivated:hover{
+.sorting-popular:hover,
+.sorting-type:hover{
   opacity: 0.6;
 }
 
-.sorting-inactivated:active{
+.sorting-popular:active,
+.sorting-type:active{
   opacity:1;
 }
 
@@ -564,7 +568,8 @@
   font-weight: 800;
   font-size: 12px;
   line-height: 15px;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .catalog-compare{
