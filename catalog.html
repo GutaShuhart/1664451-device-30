@@ -11,15 +11,14 @@
   <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
 </head>
 
-<body class="inner-body">
+<body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo opacity-hover opacity-active" href="index.html"><img src="img/device-logo-black.svg" width="163" height="35" alt="Логотип магазина Device">
       </a>
       <form class="search">
-        <p><input class="search-site" type="search" name="q" placeholder="Поиск по сайту">
+        <input class="search-site" type="search" name="q" placeholder="Поиск по сайту">
           <input class="search-button" type="submit" value="Найти">
-        </p>
       </form>
       <a class="link login opacity-hover opacity-active" href="blank.html">Валентин Петухов</a>
       <a class="link logout opacity-hover opacity-active" href="blank.html">Выйти</a>
@@ -107,13 +106,17 @@
     </section>
     <section class="sorting">
       <h2>Сортировка</h2>
-      <ul>
-        <li class="sorting-activated"><a>По цене</a></li>
-        <li class="sorting-inactivated"><a href="#">По типу</a></li>
-        <li class="sorting-inactivated"><a href="#">По популярности</a></li>
+      <ul class="sorting-list">
+        <li class="sorting-cost"><a>По цене</a></li>
+        <li class="sorting-type"><a href="#">По типу</a></li>
+        <li class="sorting-popular"><a href="#">По популярности</a></li>
       </ul>
-      <button class="button-sorting button-sorting-up" name="left"></button>
-      <button class="button-sorting button-sorting-down" name="right"></button>
+      <ul>
+        <li class="button-sorting button-sorting-up"><a href="#">Up</a></li>
+        <li class="button-sorting button-sorting-down"><a href="#">Down</a></li>   <!--Если я правильно поняла-->
+      </ul>
+      <!-- <button class="button-sorting button-sorting-up" name="left"></button>
+      <button class="button-sorting button-sorting-down" name="right"></button> -->
 
     </section>
     <section class="catalog-list">
@@ -127,7 +130,7 @@
               <h3>Любительская селфи-палка</h3>
             </a>
             <span class="catalog-price">1100</span>
-            <span class="catalog-new">new</span>
+            <span class="catalog-new">NEW</span>
             <a class="style-button button-basket" href="#">В корзину</a>
             <a class="catalog-compare" href="#">Добавить к сравнению</a>
           </article>
@@ -142,7 +145,7 @@
               <h3>Профессиональная селфи-палка </h3>
             </a>
             <span class="catalog-price">1500</span>
-            <span class="catalog-new">new</span>
+            <span class="catalog-new">NEW</span>
             <a class="style-button button-basket" href="#">В корзину</a>
             <a class="catalog-compare" href="#">Добавить к сравнению</a>
           </article>
@@ -155,7 +158,7 @@
               <h3>Непотопляемая селфи-палка</h3>
             </a>
             <span class="catalog-price">1500</span>
-            <span class="catalog-new">new</span>
+            <span class="catalog-new">NEW</span>
             <a class="style-button button-basket" href="#">В корзину</a>
             <a class="catalog-compare" href="#">Добавить к сравнению</a>
           </article>
@@ -168,7 +171,7 @@
               <h3>Селфи-палка «Следуй за мной»</h3>
             </a>
             <span class="catalog-price">1900</span>
-            <span class="catalog-new">new</span>
+            <span class="catalog-new">NEW</span>
             <a class="style-button button-basket" href="#">В корзину</a>
             <a class="catalog-compare" href="#">Добавить к сравнению</a>
           </article>
@@ -241,10 +244,10 @@
 
     <section class="footer-menu">
       <h2>Функции сайта</h2>
-      <a class="link opacity-active nav-footer" href="blank.html">Валентин Петухов</a>
-      <a class="link opacity-active nav-footer logout " href="blank.html"><span class="icon-footer opacity-active opasity-hover" ><img></span>Выйти</a>
-      <a class="link opacity-active nav-footer compare" href="blank.html"><span class="opacity-active opasity-hover" ></span>Сравнить</a>
-      <a class="link opacity-active nav-footer basket" href="blank.html"><span class="opacity-active opasity-hover" ></span>Корзина</a>
+      <a class="link nav-footer" href="blank.html">Валентин Петухов</a>
+      <a class="link nav-footer logout " href="blank.html"><span class="icon-footer opacity-active  opacity-hover" ><img></span>Выйти</a>
+      <a class="link nav-footer compare" href="blank.html"><span class="opacity-active  opacity-hover" ></span>Сравнить</a>
+      <a class="link nav-footer basket" href="blank.html"><span class="opacity-active  opacity-hover" ></span>Корзина</a>
     </section>
 
 
