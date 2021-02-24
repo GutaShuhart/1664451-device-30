@@ -21,9 +21,11 @@
           <input class="search-button" type="submit" value="Найти">
         </p>
       </form>
-      <a  class="link login-link opacity-hover opacity-active" href="blank.html"><span class></span>Войти</a>
-      <a class="link compare opacity-hover opacity-active" href="blank.html"><span class></span>Сравнить</a>
-      <a class="link basket opacity-hover opacity-active" href="blank.html"><span class></span>Корзина</a>
+      <div class="account-menu">
+      <a  class="link login-link opacity-hover opacity-active" href="blank.html"><span></span>Войти</a>
+      <a class="link compare opacity-hover opacity-active" href="blank.html"><span ></span>Сравнить</a>
+      <a class="link basket opacity-hover opacity-active" href="blank.html"><span ></span>Корзина</a>
+    </div>
       <ul class="catalog">
         <li><a class="link menu opacity-hover opacity-active" href="catalog.html">Каталог товаров</a>
           <ul>
@@ -48,9 +50,12 @@
         Товар дня
       </h2>
       <div class="slider">
+        <div class="photo-area">
         <a><img src="img/content/long-selfie-stick.jpg" width="384" height="486"
             alt="Самая длинная селфи-палкa 8,5 метров">
         </a>
+      </div>
+      <div class="slider-info-area">
         <span class="slider-count">01</span>
         <p class="slider-caption"> Делай селфи, <br>
           как Бен Стиллер!</p>
@@ -70,10 +75,14 @@
           </tr>
         </table>
       </div>
+      </div>
 
       <div class="slider">
+        <div class="photo-area">
         <a><img src="img/content/fitness-bracelet.jpg" width="345" height="485" alt="Фитнес-браслета">
         </a>
+      </div>
+      <div class="slider-info-area">
         <span class="slider-count">02</span>
         <p class="slider-caption">Худеем <br>
           правильно!</p>
@@ -89,10 +98,14 @@
           </tr>
         </table>
       </div>
+    </div>
 
       <div class="slider">
+        <div class="photo-area">
         <a><img src="img/content/quadcopter.jpg" width="526" height="334" alt="Квадрокоптер">
         </a>
+      </div>
+      <div class="slider-info-area">
         <span class="slider-count">03</span>
         <p class="slider-caption">Порхает как бабочка, <br>
           жалит как пчела!</p>
@@ -110,6 +123,7 @@
           </tr>
         </table>
       </div>
+    </div>
 
       <ul class="slider-buttons">
         <li>
@@ -128,7 +142,7 @@
     </section>
     <section class="popular-services">
       <h2>Services</h2>
-      <ul>
+      <ul class="services-table">
         <li class="services"> <a class="link services-link" href="blank.html">
             <div class="services-background"><img src="img/popular-1.svg" alt="Иконка раздела">
             </div>
@@ -170,36 +184,41 @@
     </section>
     <section class="features">
       <h2>Условия покупки</h2>
+      <div class="features-area">
       <ul class="features-list">
         <li><a class="link" href="blank.html">Доставка</a></li>
         <li><a class="link" href="blank.html">Гарантия</a></li>
         <li><a class="link" href="blank.html">Кредит</a></li>
       </ul>
+      <div class="features-info">
       <h3 class="section-caption"> Доставка</h3>
       <p class="text">Мы с удовольствием доставим ваш товар прямо к вашему
         подъезду совершенно бесплатно! Ведь мы неплохо
         заработаем, поднимая его на ваш этаж.</p>
       <img class="decor-img" src="https://via.placeholder.com/136x164" alt="Декоративное изображение">
-
+    </div>
+    <div class="features-info"></div>
       <h3 class="section-caption"> Гарантия</h3>
       <p class="text">Если из-за возгорания купленного у нас товара у вас сгорит дом —
         не переживайте, мы выдадим вам новый.
         Товар, не дом, конечно же.</p>
       <img class="decor-img" src="https://via.placeholder.com/171x195" alt="Декоративное изображение">
-
+    </div>
+    <div class="features-info"></div>
       <h3 class="section-caption"> Кредит</h3>
       <p class="text">Залезть в долговую яму стало проще! Кредитные консультанты
         подберут для вас наиболее выгодные
         условия кредита. Выгодные для нашего банка, разумеется.</p>
       <img class="decor-img" src="https://via.placeholder.com/156x188" alt="Декоративное изображение">
-
+    </div>
+  </div>
 
 
 
     </section>
     <section class="company-logo">
       <h2>Компании производители</h2>
-      <ul>
+      <ul class="company-area">
         <li class="logo-adv"> <a ><img src="img/logo-dji.png" width="260" height="100" alt="Логотип компании DGI"></a>
         </li>
         <li class="logo-adv"> <a><img src="img/logo-spgadgets.png" width="260" height="100" alt="Логотип компании SPGadgets"></a>
@@ -210,6 +229,8 @@
         </li>
       </ul>
     </section>
+
+    <div class="info-area">
     <section class="about-us">
       <h2>О нас</h2>
       <p class="text">Огромный выбор гаджетов не оставит равнодушным гика,
@@ -235,16 +256,23 @@
       <p><a class="link style-button button-detail" href="blank.html">Напишите нам</a>
       </p>
     </section>
+
+  </div>
+
   </main>
 
 
   <footer class="main-footer">
-    <a class="opacity-hover opacity-active"><img src="img/device-logo-yellow.svg" width="163" height="35" alt="Логотип магазина Device"> </a>
-    <section>
+    <div class="footer-area">
+
+    <a class="main-logo opacity-hover opacity-active"><img src="img/device-logo-yellow.svg" width="163" height="35" alt="Логотип магазина Device"> </a>
+    <section class="address-area">
       <h2>Адрес компании</h2>
       <p class="footer-address">г. Москва, ул. Строителей, 15
       </p>
+
     </section>
+
 
     <section class="footer-features">
       <h2> Условия покупки</h2>
@@ -275,6 +303,7 @@
       </ul>
     </section>
 
+
     <section class="footer-menu">
       <h2>Функции сайта</h2>
       <a class="link  nav-footer login-link " href="blank.html"><span class="icon-footer opacity-active  opacity-hover" ></span>Войти</a>
@@ -283,15 +312,18 @@
     </section>
 
 
-    <section>
+    <section class="contacts-phone-area">
       <h2>Контактный номер</h2>
       <p>Тел.: <a class="link contacts-phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
       </p>
     </section>
+    <div class="logo-area">
     <p class="footer-copyright opacity-hover opacity-active">
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-academy.svg" width="27" height="34"
           alt="Логотип HTML-Academy"></a>
     </p>
+  </div>
+</div>
   </footer>
 
   <section class="form">
