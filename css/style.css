@@ -54,6 +54,10 @@
 
 /* Global */
 
+.page {
+  height: 100%;
+}
+
 .page-body{
  font-family: "Open Sans", Arial, sans-serif;
  font-style: normal;
@@ -61,6 +65,21 @@
  font-size: 15px;
  line-height: 20px;
  color:var(--basic-black);
+
+ min-height: 100%;
+ display: grid;
+ grid-template-rows:
+ min-content
+ 1fr
+ min-content;
+ align-content: center;
+ width: auto;
+
+}
+
+.container{
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .link {
@@ -99,8 +118,43 @@
 
 /* Header */
 
-.main-header{
+
+.main-navigation{
   background-color: var(--special-yellow-light) ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.account-menu{
+  grid-column: 2/3;
+}
+.search{
+  grid-column: 1/2;
+}
+
+
+.main-header-logo{
+  margin:0 60px;
+
+}
+
+.account-menu{
+
+  grid-column-start: 3;
+  grid-column-end:4;
+}
+
+.catalog{
+  margin-left:60px;
+  margin-top: 50px;
+  padding: 0px;
+
+
+
+
 }
 
 /* search */
@@ -114,6 +168,7 @@
   opacity: 0,3;
   background-color:var(--special-yellow-light);
   border:none;
+  margin:0 60px;
 }
 
 .search-site:hover{
@@ -141,11 +196,28 @@
  }
 
 
+
+
+
 /* Slider */
 
 .features{
   background-color:var(--basic-grey-light);
+
+
 }
+
+.slider{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+}
+
+
+
+.photo-area{
+  justify-self: center;
+}
+
 
 .slider-count{
   font-family: "Gilroy", Arial, sans-serif;
@@ -203,8 +275,32 @@
  }
 
 
+ /* Services */
+
+ .services-table{
+
+   display: grid;
+   margin: 96px 0px 49px;
+   padding: 0px;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 160px 102px;
+   gap:40px;
+
+}
+
+
+
 
  /* Features */
+
+
+.features-area {
+  display: grid;
+  background-color:var(--basic-grey-light);
+
+}
+
+}
 
 .services-link{
   display:block;
@@ -225,6 +321,16 @@
   height: 160px;
  }
 
+ /* Company */
+
+ .company-area{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap:40px;
+  padding: 0;
+  margin: 90px 0px;
+
+}
 
   /* About us , Contakts */
 
@@ -237,11 +343,70 @@
   color: var(--basic-black);
  }
 
+ .info-area{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap:107px;
+
+}
+
 
   /* Footer */
 
 .main-footer{
   background-color:var(--basic-dark);
+
+}
+
+.footer-area{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 108px 108px 108px;
+  height: 324px;
+  width: 1160px;
+  margin: 0px auto;
+
+}
+
+.main-logo{
+  margin-top: 63px;
+}
+
+.address-area{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.contacts-phone-area{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self:end;
+  margin: 0;
+}
+
+
+.footer-features{
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+}
+
+.social{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.footer-menu{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self:end;
+}
+
+.logo-area{
+  grid-column: 3/4;
+  grid-row: 3/4;
+  justify-self:end;
+
 }
 
 .nav-footer{
