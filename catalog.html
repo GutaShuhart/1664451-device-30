@@ -20,10 +20,12 @@
         <input class="search-site" type="search" name="q" placeholder="Поиск по сайту">
           <input class="search-button" type="submit" value="Найти">
       </form>
+      <div class="account-menu">
       <a class="link login opacity-hover opacity-active" href="blank.html">Валентин Петухов</a>
       <a class="link logout opacity-hover opacity-active" href="blank.html">Выйти</a>
       <a class="link compare opacity-hover opacity-active" href="blank.html">Сравнить</a>
       <a class="link basket opacity-hover opacity-active" href="blank.html">Корзина</a>
+    </div>
       <ul class="catalog">
         <li><a class="link menu opacity-hover opacity-active" href="catalog.html">Каталог товаров</a>
           <ul>
@@ -35,15 +37,15 @@
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Квадрокоптеры</a></li>
           </ul>
         </li>
-        <li><a class="link menu opacity-hover opacity-active" href="blank.html">Доставка</a></li>
-        <li><a class="link menu opacity-hover opacity-active" href="blank.html">Гарантия</a></li>
-        <li><a class="link menu opacity-hover opacity-active" href="blank.html">Контакты</a></li>
+        <li><a class="link menu menu-delivery opacity-hover opacity-active" href="blank.html">Доставка</a></li>
+        <li><a class="link menu menu-guarantee opacity-hover opacity-active" href="blank.html">Гарантия</a></li>
+        <li><a class="link menu menu-contacts opacity-hover opacity-active" href="blank.html">Контакты</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h1 class="page-title">Моноподы для селфи</h1>
-    <ul class="breadcrumbs">
+  <main class="page-catalog container">
+   <h1 class="page-title">Моноподы для селфи</h1>
+   <ul class="breadcrumbs container">
       <li><a class="link" href="index.html">Главная</a></li>
       <li><a class="link" href="blank.html">Каталог товаров</a></li>
       <li class="breadcrumbs-current">Моноподы для селфи</li>
@@ -104,6 +106,7 @@
       </form>
 
     </section>
+    <div class="catalog-info">
     <section class="sorting">
       <h2>Сортировка</h2>
       <ul class="sorting-list">
@@ -111,7 +114,7 @@
         <li class="sorting-type"><a href="#">По типу</a></li>
         <li class="sorting-popular"><a href="#">По популярности</a></li>
       </ul>
-      <ul>
+      <ul class="button-sorting-list">
         <li class="button-sorting button-sorting-up"><a href="#">Up</a></li>
         <li class="button-sorting button-sorting-down"><a href="#">Down</a></li>   <!--Если я правильно поняла-->
       </ul>
@@ -122,7 +125,7 @@
     <section class="catalog-list">
       <h2>Список моноподов для селфи</h2>
 
-      <ul>
+      <ul class="catalog-list-area">
         <li>
           <article class="catalog-item">
             <img src="img/content/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка ">
@@ -181,7 +184,7 @@
     </section>
     <section class="navigation">
       <h2>Навигация</h2>
-      <ul>
+      <ul class="navigation-area">
         <li>
           <a class="navigation-back">Назад</a>
         </li>
@@ -200,14 +203,28 @@
       </ul>
 
     </section>
+  </div>
   </main>
 
 
   <footer>
 
   <footer class="main-footer">
-    <a class="opacity-hover opacity-active"><img src="img/device-logo-yellow.svg" width="163" height="35" alt="Логотип магазина Device"> </a>
-    <section>
+    <div class="footer-area">
+    <a class="main-logo opacity-hover opacity-active"><img src="img/device-logo-yellow.svg" width="163" height="35" alt="Логотип магазина Device"> </a>
+
+
+    <section class="footer-menu">
+      <h2>Функции сайта</h2>
+      <a class="link nav-footer" href="blank.html">Валентин Петухов</a>
+      <a class="link nav-footer logout " href="blank.html"><span class="icon-footer opacity-active  opacity-hover" ><img></span>Выйти</a>
+      <a class="link nav-footer compare" href="blank.html"><span class="opacity-active  opacity-hover" ></span>Сравнить</a>
+      <a class="link nav-footer basket" href="blank.html"><span class="opacity-active  opacity-hover" ></span>Корзина</a>
+    </section>
+
+
+
+    <section class="address-area">
       <h2>Адрес компании</h2>
       <p class="footer-address">г. Москва, ул. Строителей, 15
       </p>
@@ -215,7 +232,7 @@
 
     <section class="footer-features">
       <h2> Условия покупки</h2>
-      <ul>
+      <ul class="footer-feature-list">
         <li><a class="link opacity-hover opacity-active" href="blank.html">Доставка</a>
         </li>
         <li><a class="link opacity-hover opacity-active" href="blank.html">Гарантия</a>
@@ -224,9 +241,17 @@
         </li>
       </ul>
     </section>
+
+    <section class="contacts-phone-area">
+      <h2>Контактный номер</h2>
+      <p>Тел.: <a class="link contacts-phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
+      </p>
+    </section>
+
+
     <section class="social">
       <h2> Социальные сети</h2>
-      <ul >
+      <ul class="social-list">
         <li>
           <a  class="link social-button" href="#"><img src="img/icon-facebook.svg" width="32" height="32"
               alt="Фейсбук">Фейсбук</a>
@@ -242,24 +267,17 @@
       </ul>
     </section>
 
-    <section class="footer-menu">
-      <h2>Функции сайта</h2>
-      <a class="link nav-footer" href="blank.html">Валентин Петухов</a>
-      <a class="link nav-footer logout " href="blank.html"><span class="icon-footer opacity-active  opacity-hover" ><img></span>Выйти</a>
-      <a class="link nav-footer compare" href="blank.html"><span class="opacity-active  opacity-hover" ></span>Сравнить</a>
-      <a class="link nav-footer basket" href="blank.html"><span class="opacity-active  opacity-hover" ></span>Корзина</a>
-    </section>
 
 
-    <section>
-      <h2>Контактный номер</h2>
-      <p>Тел.: <a class="link contacts-phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
-      </p>
-    </section>
+
+
+    <div class="logo-area">
     <p class="footer-copyright opacity-hover opacity-active">
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-academy.svg" width="27" height="34"
           alt="Логотип HTML-Academy"></a>
     </p>
+    </div>
+    </div>
   </footer>
 
 </html>
