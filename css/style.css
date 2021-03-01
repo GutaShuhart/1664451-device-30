@@ -54,6 +54,10 @@
 
 /* Global */
 
+.list-reset{
+  list-style: none;
+}
+
 .page {
   height: 100%;
 }
@@ -171,7 +175,7 @@
 
 .main-navigation{
   box-sizing: border-box;
-  margin: 40px auto;
+  margin: 40px auto 0;
   padding-left:60px;
  }
 
@@ -606,12 +610,6 @@
 
 /*Catalog*/
 
-.page-catalog{
-  display:grid;
-  grid-template-columns:328px 1fr;
-
-}
-
 
 .page-title,
 .breadcrumbs{
@@ -626,16 +624,55 @@
   display: flex;
   grid-column: 2/3;
   height: 70px;
+  margin-left: 72px;
+}
+
+.catalog-area{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .catalog-list-area{
   display:grid;
   grid-template-columns: 1fr 1fr;
   gap:40px;
-  margin-left: 72px;
-  margin-top: 69px;
-  margin-bottom: 40px;
   padding: 0;
+  margin-left: 72px;
+  margin-top:69px;
+  max-width: 760px;
+}
+
+
+
+
+.filter-position{
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-position fieldset,
+.filter-position button{
+  margin: 0 68px 10px auto;
+  width: 200px;
+}
+
+.sorting-area{
+  background-color: var(--basic-grey-light);
+}
+
+.filter-title-area{
+  display: flex;
+  background-color:var(--grey-filter-header)
+}
+
+.filter-title-area h2{
+  width: 200px;
+  margin: auto;
+}
+
+.filter-area{
+  background-color: var(--basic-grey-light);
+
 }
 
 
@@ -707,9 +744,6 @@
   color: var(--basic-black);
   background-color: var(--grey-filter-header);
   height: 70px;
-  width: 468px;
-  margin: 0px;
-  padding-left:60px ;
 }
 
 .filter legend{
