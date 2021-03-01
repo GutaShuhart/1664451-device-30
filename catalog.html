@@ -43,17 +43,21 @@
       </ul>
     </nav>
   </header>
-  <main class="page-catalog container">
+  <main class="page-catalog">
+    <div class="container">
    <h1 class="page-title">Моноподы для селфи</h1>
    <ul class="breadcrumbs container">
       <li><a class="link" href="index.html">Главная</a></li>
       <li><a class="link" href="blank.html">Каталог товаров</a></li>
       <li class="breadcrumbs-current">Моноподы для селфи</li>
     </ul>
+   </div>
 
+   <div class="catalog-area">
+     <div class="filter-area">
     <section class="filter">
-      <h2>Фильтр:</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
+      <div class="filter-title-area"><h2>Фильтр:</h2></div>
+      <form method="get" action="https://echo.htmlacademy.ru" class="filter-position">
         <fieldset>
           <legend>Стоимость</legend>
           <input type="range" name="cost" min="0" max="8000" step="500" value="5000">
@@ -104,9 +108,10 @@
         </fieldset>
         <button class="style-button button-detail" type="submit">Показать</button>
       </form>
-
+    </div>
     </section>
     <div class="catalog-info">
+      <div class="sorting-area">
     <section class="sorting">
       <h2>Сортировка</h2>
       <ul class="sorting-list">
@@ -118,12 +123,13 @@
         <li class="button-sorting button-sorting-up"><a href="#">Up</a></li>
         <li class="button-sorting button-sorting-down"><a href="#">Down</a></li>
       </ul>
+    </div>
 
     </section>
     <section class="catalog-list">
       <h2>Список моноподов для селфи</h2>
 
-      <ul class="catalog-list-area">
+      <ul class="catalog-list-area list-reset">
         <li>
           <article class="catalog-item">
             <img src="img/content/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка ">
@@ -202,6 +208,7 @@
 
     </section>
   </div>
+</div>
   </main>
 
 
