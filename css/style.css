@@ -629,7 +629,7 @@
 
 .catalog-area{
   display:grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 36% 64%;
 }
 
 .catalog-list-area{
@@ -662,12 +662,14 @@
 
 .filter-title-area{
   display: flex;
-  background-color:var(--grey-filter-header)
+  background-color:var(--grey-filter-header);
+  height:70px;
+
 }
 
 .filter-title-area h2{
   width: 200px;
-  margin: auto;
+  margin: 25px 68px 0 auto;
 }
 
 .filter-area{
@@ -743,7 +745,6 @@
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--grey-filter-header);
-  height: 70px;
 }
 
 .filter legend{
