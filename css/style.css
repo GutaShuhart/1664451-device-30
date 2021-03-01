@@ -82,6 +82,7 @@
   margin: 0 auto;
 }
 
+
 .link {
   text-decoration: none;
   color:var(--basic-black);
@@ -122,7 +123,9 @@
 .company-logo h2,
 .features h2,
 .popular-services h2,
-.title-hidden {
+.title-hidden,
+.catalog-list h2,
+.navigation h2 {
   display:none;
 }
 
@@ -137,33 +140,51 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   width: 1160px;
-  margin: 0 auto;
 }
+
+.menu-delivery{
+  margin-right:16px;
+  margin-left:285px;
+
+}
+.menu-guarantee{
+  margin-right:111px;
+
+}
+.menu-contacts{
+  margin-right:60px;
+
+}
+
 
 .account-menu{
   grid-column: 2/3;
+  margin: 0;
 }
 .search{
   grid-column: 1/2;
 }
 
+.search-site{
+  margin: 0;
+}
+
+.main-navigation{
+  box-sizing: border-box;
+  margin: 40px auto;
+  padding-left:60px;
+ }
+
 
 .main-header-logo{
-  margin:0 60px;
-
+ margin-top: -20px;
 }
 
-.account-menu{
-
-  grid-column:2/3;
-}
 
 .catalog{
   display: flex;
   grid-column:1/3;
   justify-content: space-between;
-  margin-left:60px;
-  margin-top: 50px;
   padding: 0px;
 }
 
@@ -319,9 +340,13 @@
 .features-area {
   display: grid;
   background-color:var(--basic-grey-light);
-  grid-template-columns: 360px 1fr;
-  gap:40px;
+  grid-template-columns: 284px 1fr;
+  gap:116px;
 }
+.features{
+  background-color:var(--basic-grey-light);
+}
+
 .features-list{
   padding:0px ;
 }
@@ -386,56 +411,63 @@
 .footer-area{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 108px 108px 108px;
-  height: 324px;
+  /*grid-template-rows: 1fr 1fr 1fr;*/
   width: 1160px;
   margin: 0px auto;
 
 }
 
 .main-logo{
-  margin-top: 63px;
+  margin-top: 64px;
 }
 
 .address-area{
   grid-column: 1/2;
-  grid-row: 2/3;
-  margin-top: 31px;
+  /*grid-row: 2/3;*/
 }
 
 .contacts-phone-area{
   grid-column: 3/4;
-  grid-row: 2/3;
+  /*grid-row: 2/3;*/
   justify-self:end;
-  margin-top: 31px;
+
 }
 
 
 .footer-features{
   grid-column: 2/3;
-  grid-row: 2/3;
-  margin-top: 31px;
+  /*grid-row: 2/3;*/
+}
 
+.footer-feature-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .social{
   grid-column: 2/3;
-  grid-row: 3/4;
-  margin-top: 11px;
+  /*grid-row: 3/4;*/
+}
+
+.social-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .footer-menu{
   grid-column: 3/4;
-  grid-row: 1/2;
+  /*grid-row: 1/2;*/
   justify-self:end;
   margin-top: 46px;
 }
 
 .logo-area{
   grid-column: 3/4;
-  grid-row: 3/4;
+  /*grid-row: 3/4;*/
   justify-self:end;
-  margin-top: 10px;
+
 
 }
 
@@ -558,7 +590,9 @@
 .page-catalog{
   display:grid;
   grid-template-columns:328px 1fr;
+
 }
+
 
 .page-title,
 .breadcrumbs{
@@ -570,17 +604,21 @@
 }
 
 .sorting{
+  display: flex;
   grid-column: 2/3;
   height: 70px;
 }
 
-.catalog-list{
-  grid-column: 2/3;
+.catalog-list-area{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:40px;
+  margin-left: 72px;
+  margin-top: 69px;
+  margin-bottom: 40px;
+  padding: 0;
 }
 
-.navigation{
-  grid-column: 2/3;
-}
 
 .page-title{
   font-family: "Gilroy", Arial, sans-serif;
@@ -589,6 +627,8 @@
   font-size: 47px;
   line-height: 58px;
   color: var(--basic-black);
+  margin-left: 60px;
+  margin-bottom: 30px;
 }
 
 .catalog-item img:hover{
@@ -596,6 +636,14 @@
 }
 
 /* Breadcrumbs */
+
+
+.breadcrumbs{
+  display: flex;
+  margin: 0px;
+  padding-left: 60px;
+  padding-bottom: 50px;
+}
 
 .breadcrumbs a,
 .breadcrumbs-current{
@@ -605,6 +653,7 @@
   font-size: 14px;
   line-height: 19px;
   color: rgba( 0,0,0,0.3);
+
 
 }
 .breadcrumbs a:hover{
@@ -624,6 +673,10 @@
 
 /* Filter */
 
+.filter{
+  background-color: var(--basic-grey-light);
+}
+
 .filter h2{
   font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
@@ -636,6 +689,8 @@
   background-color: var(--grey-filter-header);
   height: 70px;
   width: 468px;
+  margin: 0px;
+  padding-left:60px ;
 }
 
 .filter legend{
@@ -697,6 +752,13 @@
 
 .sorting{
   background-color: var(--basic-grey-light);
+}
+
+.sorting-list{
+  display: flex;
+}
+.button-sorting-list{
+  display: flex;
 }
 
 .sorting h2{
@@ -837,7 +899,18 @@
   line-height: 20px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  height: 70px;
+  width: 760px;
+  margin-left: 72px;
+  margin-bottom: 78px;
   background-color:var(--grey-catalog-navigation);
+
+}
+
+.navigation-area{
+  display: flex;
+  grid-column: 2/3;
+
 
 }
 
