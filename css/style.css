@@ -84,6 +84,7 @@
 .container{
   width: 1160px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 
@@ -611,26 +612,27 @@
 /*Catalog*/
 
 
-.page-title,
-.breadcrumbs{
-  grid-column: 1/-1;
+/*
+.catalog-area{
+ display: grid;
+ grid-template-columns: 1fr 2fr;
 }
+
+
+
 
 .filter{
   grid-column: 1/2;
+  width: 468px;
+  margin: 0;
 }
 
 .sorting{
   display: flex;
-  grid-column: 2/3;
   height: 70px;
   margin-left: 72px;
 }
 
-.catalog-area{
-  display:grid;
-  grid-template-columns: 36% 64%;
-}
 
 .catalog-list-area{
   display:grid;
@@ -671,11 +673,83 @@
   width: 200px;
   margin: 25px 68px 0 auto;
 }
+*/
+
+
+
+.catalog-area{
+  display:grid;
+  grid-template-columns: 1fr minmax(486px auto) minmax(760px auto) 1fr;
+  grid-template-rows: 70px 8fr 1fr;
+}
+
+.filter-background{
+  grid-column:1/3;
+  grid-row:1/-1;
+  background-color: var(--basic-grey-light);
+}
+.sorting-background{
+  grid-column:3/5;
+  grid-row:1/2;
+  background-color: var(--basic-grey-light);
+}
+
+.filter{
+  grid-column:2/3;
+  grid-row:2/-1;
+  padding-left: 20px;
+}
+.filter-title-area{
+  grid-column:2/3;
+  grid-row:1/2;
+  padding-left: 20px;
+}
+
+.filter-title-background{
+  background-color:var(--grey-filter-header);
+  grid-column:1/3;
+  grid-row:1/2;
+}
+
+.sorting{
+  grid-column:3/4;
+  grid-row:1/2;
+  padding-right: 20px;
+}
+.catalog-list{
+  grid-column:3/4;
+  grid-row:2/4;
+}
+
+.navigation{
+  grid-column:3/4;
+  grid-row:3/4;
+}
+
+.catalog-list-area{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:40px;
+  margin-left: 72px;
+  margin-top:69px;
+  padding: 0;
+  padding-right: 20px;
+  width:760px;
+  margin-bottom: 30px;
+}
+
+.sorting{
+  display: flex;
+  height: 70px;
+  margin-left: 72px;
+}
+
 
 .filter-area{
   background-color: var(--basic-grey-light);
-
 }
+
+
 
 
 .page-title{
@@ -698,9 +772,13 @@
 
 .breadcrumbs{
   display: flex;
-  margin: 0px;
+  /*margin: 0px;
   padding-left: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 50px;*/
+  margin-left: 60px;
+  margin-bottom: 50px;
+  padding: 0;
+
 }
 
 .breadcrumbs a,
@@ -731,9 +809,6 @@
 
 /* Filter */
 
-.filter{
-  background-color: var(--basic-grey-light);
-}
 
 .filter h2{
   font-family: "Gilroy", Arial, sans-serif;
