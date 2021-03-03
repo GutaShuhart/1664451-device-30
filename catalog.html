@@ -12,7 +12,7 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo opacity-hover opacity-active" href="index.html"><img src="img/device-logo-black.svg" width="163" height="35" alt="Логотип магазина Device">
       </a>
@@ -46,7 +46,7 @@
   <main class="page-catalog">
     <div class="container">
    <h1 class="page-title">Моноподы для селфи</h1>
-   <ul class="breadcrumbs container">
+   <ul class="breadcrumbs">
       <li><a class="link" href="index.html">Главная</a></li>
       <li><a class="link" href="blank.html">Каталог товаров</a></li>
       <li class="breadcrumbs-current">Моноподы для селфи</li>
@@ -54,10 +54,11 @@
    </div>
 
    <div class="catalog-area">
-     <div class="filter-area">
+     <div class="filter-background"></div>
+     <div class="filter-title-background"></div>
+     <div class="filter-title-area"><h2>Фильтр:</h2></div>
     <section class="filter">
-      <div class="filter-title-area"><h2>Фильтр:</h2></div>
-      <form method="get" action="https://echo.htmlacademy.ru" class="filter-position">
+       <form method="get" action="https://echo.htmlacademy.ru" class="filter-position">
         <fieldset>
           <legend>Стоимость</legend>
           <input type="range" name="cost" min="0" max="8000" step="500" value="5000">
@@ -108,10 +109,9 @@
         </fieldset>
         <button class="style-button button-detail" type="submit">Показать</button>
       </form>
-    </div>
+
     </section>
-    <div class="catalog-info">
-      <div class="sorting-area">
+    <div class="sorting-background"></div>
     <section class="sorting">
       <h2>Сортировка</h2>
       <ul class="sorting-list">
@@ -123,7 +123,7 @@
         <li class="button-sorting button-sorting-up"><a href="#">Up</a></li>
         <li class="button-sorting button-sorting-down"><a href="#">Down</a></li>
       </ul>
-    </div>
+
 
     </section>
     <section class="catalog-list">
@@ -207,7 +207,6 @@
       </ul>
 
     </section>
-  </div>
 </div>
   </main>
 
