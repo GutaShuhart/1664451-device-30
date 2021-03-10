@@ -14,33 +14,33 @@
 <body class="page-body">
   <header class="main-header container">
     <nav class="main-navigation">
-      <a class="main-header-logo opacity-hover opacity-active"><img src="img/device-logo-black.svg" width="163" height="35" alt="Логотип магазина Device">
+      <a class="main-header-logo"><img src="img/device-logo-black.svg" width="163" height="35"
+          alt="Логотип магазина Device">
       </a>
       <form class="search">
-          <input type="search" class="search-site" name="search" placeholder="Поиск по сайту">
-          <input class="search-button" type="submit" value="Найти">
+        <input type="search" class="search-site" name="search" placeholder="Поиск по сайту">
+        <input class="search-button" type="submit" value="Найти">
       </form>
       <div class="account-menu">
-        <a class="link login-link opacity-hover opacity-active" href="blank.html"><span></span>Войти</a>
-        <a class="link compare opacity-hover opacity-active" href="blank.html"><span></span>Сравнить</a>
-        <a class="link basket opacity-hover opacity-active" href="blank.html"><span></span>Корзина</a>
+        <a class="link login-link" href="blank.html"><span></span>Войти</a>
+        <a class="link compare" href="blank.html"><span></span>Сравнить</a>
+        <a class="link basket" href="blank.html"><span></span>Корзина</a>
       </div>
+
       <ul class="catalog">
-        <li><a class="link menu opacity-hover opacity-active" href="catalog.html">Каталог товаров</a>
-          <!--
-        <ul class="catalog-items">
+        <li class="menu-decor"><a class="link menu  opacity-hover opacity-active" href="catalog.html">Каталог товаров</a>
+          <ul class="catalog-items">
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Виртуальная реальность</a></li>
             <li><a class="link  opacity-hover opacity-active" href="catalog.html">Моноподы для селфи</a></li>
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Экшн-камеры</a></li>
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Фитнес-браслеты</a></li>
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Умные часы</a></li>
-            <li><a class="link  opacity-hover opacity-active" href="blank.html">Квадрокоптеры</a></li>
+            <li><a class="link  opacity-hover opacity-active" href="blank.html">Квадрокоптер</a></li>
           </ul>
--->
         </li>
-        <li><a class="link menu menu-delivery opacity-hover opacity-active" href="blank.html">Доставка</a></li>
-        <li><a class="link menu menu-guarantee opacity-hover opacity-active" href="blank.html">Гарантия</a></li>
-        <li><a class="link menu menu-contacts opacity-hover opacity-active" href="blank.html">Контакты</a></li>
+        <li class="menu-delivery"><a class="link menu  opacity-hover opacity-active" href="blank.html">Доставка</a></li>
+        <li class="menu-guarantee"><a class="link menu  opacity-hover opacity-active" href="blank.html">Гарантия</a></li>
+        <li class="menu-contacts"><a class="link menu opacity-hover opacity-active" href="blank.html">Контакты</a></li>
       </ul>
     </nav>
 
@@ -48,7 +48,7 @@
   <main>
     <h1 class="title-hidden">Интернет-магазин фототехники Девайс</h1>
     <h2 class="title-hidden">Товар дня</h2>
-    <div class="slider container">
+    <div style="display: none;" class="slider container">
       <a><img src="img/content/long-selfie-stick.svg" width="384" height="486"
           alt="Самая длинная селфи-палкa 8,5 метров">
       </a>
@@ -73,8 +73,9 @@
         </table>
       </div>
     </div>
-    <!--
-    <div class="slider container">
+
+    <div style="display: none;" class="slider container">
+
       <a><img class="photo-area" src="img/content/fitness-bracelet.svg" width="345" height="485" alt="Фитнес-браслет">
       </a>
       <div class="slider-info-area">
@@ -117,21 +118,21 @@
         </table>
       </div>
     </div>
--->
-<div class="container">
-    <ul class="slider-buttons">
-      <li>
-        <button class="slider-button" type="button"></button>
-      </li>
-      <li>
-        <button class="slider-button" type="button"></button>
-      </li>
-      <li>
-        <button class="slider-button" type="button"></button>
-      </li>
 
-    </ul>
-  </div>
+    <div class="container">
+      <ul class="slider-buttons">
+        <li>
+          <button class="slider-button" type="button"></button>
+        </li>
+        <li>
+          <button class="slider-button" type="button"></button>
+        </li>
+        <li>
+          <button class="slider-button" type="button"></button>
+        </li>
+
+      </ul>
+    </div>
 
     <section class="popular-services container">
       <h2>Services</h2>
@@ -186,32 +187,32 @@
         <div class="features-info-area">
           <div class="features-info-item">
             <div>
-          <h3 class="section-caption"> Доставка</h3>
-          <p class="slider-text">Мы с удовольствием доставим ваш товар прямо к вашему
-            подъезду совершенно бесплатно! Ведь мы неплохо
-            заработаем, поднимая его на ваш этаж.</p>
+              <h3 class="section-caption"> Доставка</h3>
+              <p class="slider-text">Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду совершенно бесплатно! Ведь мы неплохо
+                заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <img class="decor-img" src="https://via.placeholder.com/136x164" alt="Декоративное изображение">
           </div>
-          <img class="decor-img" src="https://via.placeholder.com/136x164" alt="Декоративное изображение">
+          <div class="features-info-item">
+            <div>
+              <h3 class="section-caption"> Гарантия</h3>
+              <p class="slider-text">Если из-за возгорания купленного у нас товара у вас сгорит дом —
+                не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.</p>
+            </div>
+            <img class="decor-img" src="https://via.placeholder.com/171x195" alt="Декоративное изображение">
+          </div>
+          <div class="features-info-item">
+            <div>
+              <h3 class="section-caption"> Кредит</h3>
+              <p class="slider-text">Залезть в долговую яму стало проще! Кредитные консультанты
+                подберут для вас наиболее выгодные
+                условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </div>
+            <img class="decor-img" src="https://via.placeholder.com/156x188" alt="Декоративное изображение">
+          </div>
         </div>
-        <div class="features-info-item">
-          <div>
-        <h3 class="section-caption"> Гарантия</h3>
-        <p class="slider-text">Если из-за возгорания купленного у нас товара у вас сгорит дом —
-          не переживайте, мы выдадим вам новый.
-          Товар, не дом, конечно же.</p>
-        </div>
-        <img class="decor-img" src="https://via.placeholder.com/171x195" alt="Декоративное изображение">
-      </div>
-      <div class="features-info-item">
-        <div>
-      <h3 class="section-caption"> Кредит</h3>
-      <p class="slider-text">Залезть в долговую яму стало проще! Кредитные консультанты
-        подберут для вас наиболее выгодные
-        условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </div>
-      <img class="decor-img" src="https://via.placeholder.com/156x188" alt="Декоративное изображение">
-    </div>
-     </div>
       </div>
     </section>
 
@@ -270,15 +271,15 @@
       <a class="main-logo opacity-hover opacity-active"><img src="img/device-logo-yellow.svg" width="163" height="35"
           alt="Логотип магазина Device"> </a>
 
-          <section class="footer-menu">
-            <h2>Функции сайта</h2>
-            <a class="link  nav-footer footer-login-link " href="blank.html"><span
-                class="icon-footer opacity-active  opacity-hover"></span>Войти</a>
-            <a class="link  nav-footer footer-compare" href="blank.html"><span
-                class="opacity-active  opacity-hover"></span>Сравнить</a>
-            <a class="link  nav-footer footer-basket" href="blank.html"><span
-                class="opacity-active  opacity-hover"></span>Корзина</a>
-          </section>
+      <section class="footer-menu">
+        <h2>Функции сайта</h2>
+        <a class="link  nav-footer footer-login-link " href="blank.html"><span
+            class="icon-footer opacity-active  opacity-hover"></span>Войти</a>
+        <a class="link  nav-footer footer-compare" href="blank.html"><span
+            class="opacity-active  opacity-hover"></span>Сравнить</a>
+        <a class="link  nav-footer footer-basket" href="blank.html"><span
+            class="opacity-active  opacity-hover"></span>Корзина</a>
+      </section>
 
 
       <section class="address-area">
@@ -312,15 +313,15 @@
         <ul class="social-list">
           <li>
             <a class="link social-button" href="#"><img src="img/icon-facebook.svg" width="32" height="32"
-                alt="Фейсбук">Фейсбук</a>
+                alt="Фейсбук"></a>
           </li>
           <li>
             <a class="link social-button" href="#"><img src="img/icon-instagram.svg" width="32" height="32"
-                alt="Инстаграм">Инстаграм</a>
+                alt="Инстаграм"></a>
           </li>
           <li>
             <a class="link social-button" href="#"><img src="img/icon-twitter.svg" width="32" height="32"
-                alt="Твиттер">Твиттер</a>
+                alt="Твиттер"></a>
           </li>
         </ul>
       </section>
