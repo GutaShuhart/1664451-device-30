@@ -18,8 +18,8 @@
           alt="Логотип магазина Device">
       </a>
       <form class="search">
-        <input type="search" class="search-site" name="search" placeholder="Поиск по сайту">
-        <input class="search-button" type="submit" value="Найти">
+        <input type="text" class="search-site" name="search" value="Поиск по сайту">
+        <button class="search-button" type="submit">Найти</button>
       </form>
       <div class="account-menu">
         <a class="link login-link" href="blank.html"><span></span>Войти</a>
@@ -28,14 +28,16 @@
       </div>
 
       <ul class="catalog">
-        <li class="menu-decor"><a class="link menu  opacity-hover opacity-active" href="catalog.html">Каталог товаров</a>
+        <li class="menu-decor menu-decor-index"><a class="link menu  opacity-hover opacity-active" href="catalog.html">Каталог товаров</a>
           <ul class="catalog-items">
+            <div class="catalog-items-background">
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Виртуальная реальность</a></li>
             <li><a class="link  opacity-hover opacity-active" href="catalog.html">Моноподы для селфи</a></li>
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Экшн-камеры</a></li>
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Фитнес-браслеты</a></li>
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Умные часы</a></li>
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Квадрокоптер</a></li>
+          </div>
           </ul>
         </li>
         <li class="menu-delivery"><a class="link menu  opacity-hover opacity-active" href="blank.html">Доставка</a></li>
@@ -48,7 +50,9 @@
   <main>
     <h1 class="title-hidden">Интернет-магазин фототехники Девайс</h1>
     <h2 class="title-hidden">Товар дня</h2>
-    <div style="display: none;" class="slider container">
+    <section class="sliders">
+    <div class="slide container">
+    <div class="slider">
       <a><img src="img/content/long-selfie-stick.svg" width="384" height="486"
           alt="Самая длинная селфи-палкa 8,5 метров">
       </a>
@@ -58,9 +62,9 @@
           как Бен Стиллер!</p>
         <p class="main-slider-text">Самая длинная палка для селфи доступна в нашем магазине.<br>
           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-        <a class="link style-button button-detail slider-button-detail" href="blank.html">Подробнее</a>
+        <a class="link   slider-button-detail button-detail style-button" href="blank.html">Подробнее</a>
         <table class="table">
-          <tr class="table-header">
+          <tr class="table-header table-header-first">
             <td>8,5 м</td>
             <td>5 кг</td>
             <td>Карбон</td>
@@ -73,8 +77,10 @@
         </table>
       </div>
     </div>
+  </div>
 
-    <div style="display: none;" class="slider container">
+  <div class="slide container">
+    <div class="slider">
 
       <a><img class="photo-area" src="img/content/fitness-bracelet.svg" width="345" height="485" alt="Фитнес-браслет">
       </a>
@@ -84,7 +90,7 @@
           правильно!</p>
         <p class="main-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
           не пропускать занятия и соблюдать диету.</p>
-        <a class="link style-button button-detail slider-button-detail" href="blank.html">Подробнее</a>
+        <a class="link  button-detail slider-button-detail style-button" href="blank.html">Подробнее</a>
         <table class="table">
           <tr class="table-header">
             <td>48 часов</td>
@@ -95,8 +101,10 @@
         </table>
       </div>
     </div>
+  </div>
 
-    <div class="slider container">
+  <div class="slide container slide-current">
+    <div class="slider ">
       <a><img class="photo-area" src="img/content/quadcopter.svg" width="526" height="334" alt="Квадрокоптер">
       </a>
       <div class="slider-info-area">
@@ -105,9 +113,9 @@
           жалит как пчела!</p>
         <p class="main-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
           мощным лазером, замаскированным под стандартную камеру.</p>
-        <a class="link style-button button-detail slider-button-detail" href="blank.html">Подробнее</a>
+        <a class="link  button-detail slider-button-detail style-button" href="blank.html">Подробнее</a>
         <table class="table">
-          <tr class="table-header">
+          <tr class="table-header table-header-third">
             <td>800 м</td>
             <td>50 м</td>
           </tr>
@@ -118,17 +126,19 @@
         </table>
       </div>
     </div>
+  </div>
+  </section>
 
     <div class="container">
       <ul class="slider-buttons">
         <li>
-          <button class="slider-button" type="button"></button>
+          <button class="slider-button current" type="button" aria-label="Первый слайд"></button>
         </li>
         <li>
-          <button class="slider-button" type="button"></button>
+          <button class="slider-button" type="button" aria-label="Второй слайд"></button>
         </li>
         <li>
-          <button class="slider-button" type="button"></button>
+          <button class="slider-button" type="button" aria-label="Третий слайд"></button>
         </li>
 
       </ul>
@@ -146,7 +156,7 @@
         <li class="services"> <a class="link services-link" href="catalog.html">
             <div class="services-background"><img src="img/popular-2.svg" alt="Иконка раздела">
             </div>
-            <h3 class="services-subtitle">Моноподы для селфи</h3>
+            <h3 class="services-subtitle">Моноподы <nobr>для селфи</nobr></h3>
           </a>
         </li>
         <li class="services"> <a class="link services-link" href="blank.html">
@@ -180,11 +190,13 @@
       <h2>Условия покупки</h2>
       <div class="features-area container">
         <ul class="features-list">
-          <li><a class="link" href="blank.html">Доставка</a></li>
-          <li><a class="link" href="blank.html">Гарантия</a></li>
-          <li><a class="link" href="blank.html">Кредит</a></li>
+          <li><a class="link style-button features-button features-button-current " href="blank.html">Доставка</a></li>
+          <li><a class="link style-button features-button" href="blank.html">Гарантия</a></li>
+          <li><a class="link style-button features-button" href="blank.html">Кредит</a></li>
         </ul>
+
         <div class="features-info-area">
+          <div class="features-slide features-slide-current">
           <div class="features-info-item">
             <div>
               <h3 class="section-caption"> Доставка</h3>
@@ -192,8 +204,14 @@
                 подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <img class="decor-img" src="https://via.placeholder.com/136x164" alt="Декоративное изображение">
+            <img class="decor-img" src="img/delivery.svg" width="136" height="164" alt="Декоративное изображение">
           </div>
+        </div>
+
+
+
+
+        <div class="features-slide ">
           <div class="features-info-item">
             <div>
               <h3 class="section-caption"> Гарантия</h3>
@@ -201,8 +219,13 @@
                 не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.</p>
             </div>
-            <img class="decor-img" src="https://via.placeholder.com/171x195" alt="Декоративное изображение">
+            <img class="decor-img" src="img/warranty.svg" width="171" height="195" alt="Декоративное изображение">
           </div>
+        </div>
+
+
+
+        <div class="features-slide ">
           <div class="features-info-item">
             <div>
               <h3 class="section-caption"> Кредит</h3>
@@ -210,10 +233,11 @@
                 подберут для вас наиболее выгодные
                 условия кредита. Выгодные для нашего банка, разумеется.</p>
             </div>
-            <img class="decor-img" src="https://via.placeholder.com/156x188" alt="Декоративное изображение">
+            <img class="decor-img" src="img/credit.svg" width="156" height="188" alt="Декоративное изображение">
           </div>
         </div>
       </div>
+    </div>
     </section>
 
 
@@ -241,7 +265,7 @@
         <p class="text">Мы можем доставить ваш товар в самые отдаленные точки
           России! DEVICE работает со многими транспортными компаниями:</p>
 
-        <ul>
+        <ul class="list-transport-company">
           <li class="transport-company">Деловые линии</li>
           <li class="transport-company">Автотрейдинг</li>
           <li class="transport-company">ЖелДорЭкспедиция</li>
@@ -256,8 +280,8 @@
         <a
           href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618?hl=ru"><img
             src="img/content/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15"></a>
-        <p><a class="link style-button button-detail" href="blank.html">Напишите нам</a>
-        </p>
+       <a class="link style-button button-detail" href="blank.html">Напишите нам</a>
+
       </section>
 
     </div>
@@ -273,8 +297,10 @@
 
       <section class="footer-menu">
         <h2>Функции сайта</h2>
-        <a class="link  nav-footer footer-login-link " href="blank.html"><span
-            class="icon-footer opacity-active  opacity-hover"></span>Войти</a>
+        <a class="link  nav-footer footer-login-link " href="blank.html">
+          <span
+            class="icon-footer">
+          </span>Войти</a>
         <a class="link  nav-footer footer-compare" href="blank.html"><span
             class="opacity-active  opacity-hover"></span>Сравнить</a>
         <a class="link  nav-footer footer-basket" href="blank.html"><span
@@ -339,24 +365,24 @@
     </div>
   </footer>
 
-  <section class="form">
-    <h2> Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <p class=" appointment">
-        <label for="appointment-name">Ваше имя</label>
+  <section class="form-wrapper">
+    <h2 class="visually-hidden"> Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post" class="form">
+      <p class=" appointment form-appointment-name">
+        <label for="appointment-name">Ваше имя:</label>
         <input class="appointment-name" id="appointment-name" type="text" name="name" placeholder="ИмяФамилия">
       </p>
-      <p class="appointment">
+      <p class="appointment form-appointment-email">
         <label for="appointment-email">Ваш e-mail:</label>
         <input class="appointment-email" id="appointment-email" type="email" name="email"
           placeholder="email@example.com">
       </p>
-      <p class=" appointment">
-        <label for="appointment-text">Текст письма</label>
+      <p class=" appointment form-appointment-text">
+        <label for="appointment-text">Текст письма:</label>
         <input class="appointment-text" id="appointment-text" type="text" name="text" placeholder="В свободной форме">
       </p>
-      <button class="style-button appointment-button" type="submit">Отправить</button>
-      <button class="button-closed" type="button"><span></span>Закрыть</button>
+      <button class="style-button form-appointment-button" type="submit">Отправить</button>
+      <button class="button-closed" type="button"></button>
     </form>
 
 
