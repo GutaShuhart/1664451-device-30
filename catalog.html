@@ -29,16 +29,16 @@
         <a class="link basket opacity-hover opacity-active" href="blank.html">Корзина</a>
       </div>
       <ul class="catalog">
-        <li class="menu-decor"><a class="link menu opacity-hover opacity-active" href="catalog.html">Каталог товаров</a>
+        <li class="menu-decor">
+          <a class="link menu" href="catalog.html"><span>Каталог товаров</span></a>
           <ul class="catalog-items">
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Виртуальная реальность</a></li>
             <li><a class="link  opacity-hover opacity-active" href="catalog.html">Моноподы для селфи</a></li>
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Экшн-камеры</a></li>
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Фитнес-браслеты</a></li>
             <li><a class="link  opacity-hover opacity-active" href="blank.html">Умные часы</a></li>
-            <li><a class="link  opacity-hover opacity-active" href="blank.html">Квадрокоптеры</a></li>
+            <li><a class="link  opacity-hover opacity-active" href="blank.html">Квадрокоптер</a></li>
           </ul>
-
         </li>
         <li class="menu-delivery"><a class="link menu  opacity-hover opacity-active" href="blank.html">Доставка</a></li>
         <li class="menu-guarantee"><a class="link menu  opacity-hover opacity-active" href="blank.html">Гарантия</a>
@@ -71,9 +71,15 @@
         <form method="get" action="https://echo.htmlacademy.ru" class="filter-position">
           <fieldset>
             <legend>Стоимость</legend>
-            <input type="range" name="cost" min="0" max="8000" step="500" value="5000">
-            <span>от 0</span>
-            <span>до 5000</span>
+            <div class="range-filter">
+              <div class="range-controls">
+                <input type="range" name="cost" min="0" max="8000" step="500" value="5000">
+              </div>
+              <div class="price-controls">
+                <span>от 0</span>
+                <span>до 5000</span>
+              </div>
+            </div>
 
           </fieldset>
 
@@ -81,27 +87,28 @@
             <legend>Цвет</legend>
             <ul>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="monopod-black" id="filter-black"
-                  checked>
+                <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="monopod-black"
+                  id="filter-black" checked>
                 <label for="filter-black">Черный</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="monopod-white"
+                <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="monopod-white"
                   id="filter-white">
                 <label for="filter-white">Белый</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="monopod-blue" id="filter-blue"
-                  checked>
+                <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="monopod-blue"
+                  id="filter-blue" checked>
                 <label for="filter-blue">Синий</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="monopod-red" id="filter-red"
-                  checked>
+                <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="monopod-red"
+                  id="filter-red" checked>
                 <label for="filter-red">Красный</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="filter-input-checkbox filter-input" type="checkbox" name="monopod-pink" id="filter-pink">
+                <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="monopod-pink"
+                  id="filter-pink">
                 <label for="filter-pink">Розовый</label>
               </li>
             </ul>
@@ -111,12 +118,13 @@
             <legend>Bluetooth</legend>
             <ul>
               <li class="filter-option filter-radio">
-                <input class="filter-input-radio filter-input" type="radio" name="bluetooth" value="yes" id="filter-yes"
-                  checked>
+                <input class="filter-input-radio filter-input visually-hidden" type="radio" name="bluetooth" value="yes"
+                  id="filter-yes" checked>
                 <label for="filter-yes">Есть</label>
               </li>
               <li class="filter-option filter-radio">
-                <input class="filter-input-radio filter-input" type="radio" name="bluetooth" value="no" id="filter-no">
+                <input class="filter-input-radio filter-input visually-hidden" type="radio" name="bluetooth" value="no"
+                  id="filter-no">
                 <label for="filter-no">Нет</label>
               </li>
             </ul>
@@ -134,8 +142,8 @@
           <li class="sorting-popular"><a href="#">По популярности</a></li>
         </ul>
         <ul class="button-sorting-list">
-          <li class="button-sorting button-sorting-up"><a href="#">Up</a></li>
-          <li class="button-sorting button-sorting-down"><a href="#">Down</a></li>
+          <li class="button-sorting button-sorting-up" aria-label="Сортировка снизу верх"><a href="#"></a></li>
+          <li class="button-sorting button-sorting-down" aria-label="Сортировка сверху вниз"><a href="#"></a></li>
         </ul>
 
 
@@ -169,8 +177,7 @@
                 alt="Профессиональная селфи-палка ">
               <div class="catalog-item-info">
                 <a href="Профессиональная-селфи-палка.html">
-                  <h3>Профессиональная <br>
-                    селфи-палка</h3>
+                  <h3>Профессиональная селфи-палка</h3>
                 </a>
                 <span class="catalog-price">1 500 руб.</span>
               </div>
@@ -204,7 +211,7 @@
               <img src="img/content/hand-selfie-stick.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               <div class="catalog-item-info">
                 <a href="Селфи-палка-Следуй-за-мной».html">
-                  <h3>Селфи-палка «Следуй за мной»</h3>
+                  <h3>Селфи-палка&laquo;Следуй за мной&raquo;</h3>
                 </a>
                 <span class="catalog-price">1 900 руб.</span>
               </div>
@@ -222,7 +229,7 @@
         <h2>Навигация</h2>
         <ul class="navigation-area">
           <li>
-            <a class="navigation-back">Назад</a>
+            <a class="navigation-back disabled" href="#">Назад</a>
           </li>
           <li>
             <ul class="navigation-count">
@@ -247,81 +254,76 @@
   </main>
 
 
-  <footer>
-
-    <footer class="main-footer">
-      <div class="footer-area">
-        <a class="main-logo opacity-hover opacity-active"><img src="img/device-logo-yellow.svg" width="163" height="35"
-            alt="Логотип магазина Device"> </a>
+  <footer class="main-footer">
+    <div class="footer-area">
+      <a class="main-logo opacity-hover opacity-active"><img src="img/device-logo-yellow.svg" width="163" height="35"
+          alt="Логотип магазина Device"> </a>
 
 
-        <section class="footer-menu">
-          <h2>Функции сайта</h2>
-          <a class="link nav-footer user-footer" href="blank.html">Валентин Петухов</a>
-          <a class="link nav-footer logout-footer" href="blank.html"><span
-              class="icon-footer opacity-active  opacity-hover"><img></span>Выйти</a>
-          <a class="link nav-footer compare" href="blank.html"><span
-              class="opacity-active  opacity-hover"></span>Сравнить</a>
-          <a class="link nav-footer basket" href="blank.html"><span
-              class="opacity-active  opacity-hover"></span>Корзина</a>
-        </section>
+      <section class="footer-menu">
+        <h2>Функции сайта</h2>
+        <a class="link nav-footer user-footer" href="blank.html"><span>Валентин Петухов</span></a>
+        <a class="link  nav-footer" href="blank.html"><span>Выйти</span></a>
+        <a class="link  nav-footer footer-compare" href="blank.html"><span>Сравнить</span></a>
+        <a class="link  nav-footer footer-basket" href="blank.html"><span>Корзина</span></a>
+      </section>
 
 
 
-        <section class="address-area">
-          <h2>Адрес компании</h2>
-          <p class="footer-address">г. Москва, ул. Строителей, 15
-          </p>
-        </section>
+      <section class="address-area">
+        <h2>Адрес компании</h2>
+        <p class="footer-address">г. Москва, ул. Строителей, 15
+        </p>
+      </section>
 
-        <section class="footer-features">
-          <h2> Условия покупки</h2>
-          <ul class="footer-feature-list">
-            <li><a class="link opacity-hover opacity-active" href="blank.html">Доставка</a>
-            </li>
-            <li><a class="link opacity-hover opacity-active" href="blank.html">Гарантия</a>
-            </li>
-            <li><a class="link opacity-hover opacity-active" href="blank.html">Контакты</a>
-            </li>
-          </ul>
-        </section>
+      <section class="footer-features">
+        <h2> Условия покупки</h2>
+        <ul class="footer-feature-list">
+          <li><a class="link opacity-hover opacity-active" href="blank.html">Доставка</a>
+          </li>
+          <li><a class="link opacity-hover opacity-active" href="blank.html">Гарантия</a>
+          </li>
+          <li><a class="link opacity-hover opacity-active" href="blank.html">Контакты</a>
+          </li>
+        </ul>
+      </section>
 
-        <section class="contacts-phone-area">
-          <h2>Контактный номер</h2>
-          <p>Тел.: <a class="link contacts-phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
-          </p>
-        </section>
+      <section class="contacts-phone-area">
+        <h2>Контактный номер</h2>
+        <p>Тел.: <a class="link contacts-phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
+        </p>
+      </section>
 
 
-        <section class="social">
-          <h2> Социальные сети</h2>
-          <ul class="social-list">
-            <li>
-              <a class="link social-button" href="#"><img src="img/icon-facebook.svg" width="32" height="32"
-                  alt="Фейсбук"></a>
-            </li>
-            <li>
-              <a class="link social-button" href="#"><img src="img/icon-instagram.svg" width="32" height="32"
-                  alt="Инстаграм"></a>
-            </li>
-            <li>
-              <a class="link social-button " href="#"><img src="img/icon-twitter.svg" width="32" height="32"
-                  alt="Твиттер"></a>
-            </li>
-          </ul>
-        </section>
+      <section class="social">
+        <h2> Социальные сети</h2>
+        <ul class="social-list">
+          <li>
+            <a class="link social-button" href="#"><img src="img/icon-facebook.svg" width="32" height="32"
+                alt="Фейсбук"></a>
+          </li>
+          <li>
+            <a class="link social-button" href="#"><img src="img/icon-instagram.svg" width="32" height="32"
+                alt="Инстаграм"></a>
+          </li>
+          <li>
+            <a class="link social-button " href="#"><img src="img/icon-twitter.svg" width="32" height="32"
+                alt="Твиттер"></a>
+          </li>
+        </ul>
+      </section>
 
 
 
 
 
-        <div class="logo-area">
-          <p class="footer-copyright opacity-hover opacity-active">
-            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-academy.svg" width="27"
-                height="34" alt="Логотип HTML-Academy"></a>
-          </p>
-        </div>
+      <div class="logo-area">
+        <p class="footer-copyright opacity-hover opacity-active">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-academy.svg" width="27" height="34"
+              alt="Логотип HTML-Academy"></a>
+        </p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
 </html>
