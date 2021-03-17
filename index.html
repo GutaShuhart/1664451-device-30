@@ -49,8 +49,8 @@
   </header>
   <main>
     <h1 class="title-hidden">Интернет-магазин фототехники Девайс</h1>
-    <h2 class="title-hidden">Товар дня</h2>
     <section class="sliders">
+      <h2 class="title-hidden">Товар дня</h2>
       <div class="slide container">
         <div class="slider">
           <a><img src="img/content/long-selfie-stick.svg" width="384" height="486"
@@ -62,7 +62,7 @@
               как Бен Стиллер!</p>
             <p class="main-slider-text">Самая длинная палка для селфи доступна в нашем магазине.<br>
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a class="link   slider-button-detail button-detail style-button" href="blank.html">Подробнее</a>
+            <a class="link style-button" href="blank.html">Подробнее</a>
             <table class="table">
               <tr class="table-header table-header-first">
                 <td>8,5 м</td>
@@ -91,7 +91,7 @@
               правильно!</p>
             <p class="main-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
               не пропускать занятия и соблюдать диету.</p>
-            <a class="link  button-detail slider-button-detail style-button" href="blank.html">Подробнее</a>
+            <a class="link style-button" href="blank.html">Подробнее</a>
             <table class="table">
               <tr class="table-header">
                 <td>48 часов</td>
@@ -114,7 +114,7 @@
               жалит как пчела!</p>
             <p class="main-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
               мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="link  button-detail slider-button-detail style-button" href="blank.html">Подробнее</a>
+            <a class="link style-button" href="blank.html">Подробнее</a>
             <table class="table">
               <tr class="table-header table-header-third">
                 <td>800 м</td>
@@ -159,7 +159,7 @@
         <li class="services"> <a class="link services-link" href="catalog.html">
             <div class="services-background"><img src="img/popular-2.svg" alt="Иконка раздела">
             </div>
-            <h3 class="services-subtitle">Моноподы для селфи</h3>
+            <h3 class="services-subtitle">Моноподы для&nbsp;селфи</h3>
           </a>
         </li>
         <li class="services"> <a class="link services-link" href="blank.html">
@@ -194,8 +194,8 @@
       <div class="features-area container">
         <ul class="features-list">
           <li class="current"><a class="link  features-button-current " href="blank.html">Доставка</a></li>
-          <li><a class="link  style-button" href="blank.html">Гарантия</a></li>
-          <li><a class="link style-button " href="blank.html">Кредит</a></li>
+          <li><a class="link  style-button features-style-button" href="blank.html">Гарантия</a></li>
+          <li><a class="link style-button features-style-button" href="blank.html">Кредит</a></li>
         </ul>
 
         <div class="features-info-area">
@@ -214,7 +214,7 @@
 
 
 
-          <div class="features-slide ">
+          <div class="features-slide">
             <div class="features-info-item">
               <div>
                 <h3 class="section-caption"> Гарантия</h3>
@@ -273,7 +273,7 @@
           <li class="transport-company">Автотрейдинг</li>
           <li class="transport-company">ЖелДорЭкспедиция</li>
         </ul>
-        <a class=" link style-button button-detail" href="blank.html">Подробнее о нас</a>
+        <a class=" link style-button" href="blank.html">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
@@ -283,7 +283,7 @@
         <a
           href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618?hl=ru"><img
             src="img/content/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15"></a>
-        <a class="link style-button button-detail" href="blank.html">Напишите нам</a>
+        <a class="link style-button" href="blank.html">Напишите нам</a>
 
       </section>
 
@@ -363,7 +363,7 @@
     </div>
   </footer>
 
-  <section class="form-wrapper">
+  <section class=" modal form-wrapper">
     <h2 class="visually-hidden"> Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post" class="form">
       <p class=" appointment form-appointment-name">
@@ -377,8 +377,7 @@
       </p>
       <p class=" appointment form-appointment-text">
         <label for="appointment-text">Текст письма:</label>
-        <textarea class="appointment-text" id="appointment-text" name="text"
-          placeholder="В свободной форме"></textarea>
+        <textarea class="appointment-text" id="appointment-text" name="text" placeholder="В свободной форме"></textarea>
       </p>
       <button class="style-button form-appointment-button" type="submit">Отправить</button>
       <button class="button-closed" type="button" aria-label="Закрыть"></button>
@@ -388,12 +387,12 @@
   </section>
 
 
-  <section class="modal-map">
+  <section class="modal modal-map">
     <h2 class="visually-hidden"> Карта </h2>
     <a
       href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618?hl=ru"><img
         src="img/content/map-big.jpg" width="994" height="593" alt="Карта офиса по адресу улица Строителей, 15"></a>
-    <button class="button-closed button-closed-map" type="button" aria-label="Закрыть"></button>
+    <button class="button-closed" type="button" aria-label="Закрыть"></button>
 
   </section>
 
