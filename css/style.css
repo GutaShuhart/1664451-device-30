@@ -202,7 +202,6 @@
   display: grid;
   position: absolute;
   grid-template-columns: 1.3fr 0.96fr 1.26fr 2.5fr;
-  ;
   column-gap: 40px;
   row-gap: 16px;
   padding-right: 60px;
