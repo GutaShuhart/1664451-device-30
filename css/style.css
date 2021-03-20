@@ -1005,7 +1005,8 @@ form.search:focus-within .search-button {
   min-width: 700px;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
 .footer-feature-list li {
@@ -1193,6 +1194,7 @@ form.search:focus-within .search-button {
 
 .appointment {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .appointment-name, .appointment-email, .appointment-text {
@@ -1280,7 +1282,6 @@ form.search:focus-within .search-button {
   height: 593px;
   background-color: var(--basic-white);
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
-  bottom: 313px;
   display: none;
 }
 
@@ -1515,7 +1516,7 @@ form p {
   margin-left: auto;
   padding-left: 80px;
   margin-top: 25px;
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1695,7 +1696,7 @@ form p {
   position: absolute;
   width: 200px;
   height: 2px;
-  top: -16px;
+  margin-top: -16px;
   right: 68px;
   background-color: var(--basic-black);
 }
@@ -1705,7 +1706,6 @@ form p {
   padding: 0;
   border: none;
   position: relative;
-  box-sizing: border-box;
 }
 
 .range-controls {
@@ -1959,6 +1959,7 @@ form p {
   display: inline-block;
   margin-left: -2px;
   margin-top: 23px;
+  vertical-align: baseline;
 }
 
 .catalog-compare:hover {
