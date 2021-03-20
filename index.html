@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин фототехники Девайс</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
@@ -18,7 +18,8 @@
           alt="Логотип магазина Device">
       </a>
       <form class="search">
-        <input type="text" class="search-site" name="search" value="Поиск по сайту">
+        <label class="visually-hidden" for="search-site">Поиск</label>
+        <input type="text" class="search-site" id="search-site" name="search" value="Поиск по сайту">
         <button class="search-button" type="submit">Найти</button>
       </form>
       <div class="account-menu">
@@ -31,12 +32,12 @@
         <li class="menu-decor">
           <a class="link menu" href="catalog.html"><span>Каталог товаров</span></a>
           <ul class="catalog-items">
-            <li><a class="link opacity-hover opacity-active" href="blank.html">Виртуальная реальность</a></li>
+            <li><a class="link opacity-hover opacity-active" href="catalog.html">Виртуальная реальность</a></li>
             <li><a class="link opacity-hover opacity-active" href="catalog.html">Моноподы для селфи</a></li>
-            <li><a class="link opacity-hover opacity-active" href="blank.html">Экшн-камеры</a></li>
-            <li><a class="link opacity-hover opacity-active" href="blank.html">Фитнес-браслеты</a></li>
-            <li><a class="link opacity-hover opacity-active" href="blank.html">Умные часы</a></li>
-            <li><a class="link opacity-hover opacity-active" href="blank.html">Квадрокоптер</a></li>
+            <li><a class="link opacity-hover opacity-active" href="catalog.html">Экшн-камеры</a></li>
+            <li><a class="link opacity-hover opacity-active" href="catalog.html">Фитнес-браслеты</a></li>
+            <li><a class="link opacity-hover opacity-active" href="catalog.html">Умные часы</a></li>
+            <li><a class="link opacity-hover opacity-active" href="catalog.html">Квадрокоптер</a></li>
           </ul>
         </li>
         <li class="menu-delivery"><a class="link menu  opacity-hover opacity-active" href="blank.html">Доставка</a></li>
@@ -152,38 +153,38 @@
       <h2>Services</h2>
 
       <ul class="services-table">
-        <li class="services"> <a class="link services-link" href="blank.html">
-            <div class="services-background"><img src="img/popular-1.svg" alt="Иконка раздела">
+        <li class="services"> <a class="link services-link" href="catalog.html">
+            <div class="services-background"><img src="img/popular-1.svg" width="97" height="55" alt="Иконка раздела">
             </div>
             <h3 class="services-subtitle">Виртуальная реальность</h3>
           </a>
         </li>
         <li class="services"> <a class="link services-link" href="catalog.html">
-            <div class="services-background"><img src="img/popular-2.svg" alt="Иконка раздела">
+            <div class="services-background"><img src="img/popular-2.svg" width="88" height="117" alt="Иконка раздела">
             </div>
             <h3 class="services-subtitle">Моноподы для&nbsp;селфи</h3>
           </a>
         </li>
-        <li class="services"> <a class="link services-link" href="blank.html">
-            <div class="services-background"><img src="img/popular-3.svg" alt="Иконка раздела">
+        <li class="services"> <a class="link services-link" href="catalog.html">
+            <div class="services-background"><img src="img/popular-3.svg" width="71" height="87" alt="Иконка раздела">
             </div>
             <h3 class="services-subtitle">Экшн-камеры</h3>
           </a>
         </li>
-        <li class="services"> <a class="link services-link" href="blank.html">
-            <div class="services-background"><img src="img/popular-4.svg" alt="Иконка раздела">
+        <li class="services"> <a class="link services-link" href="catalog.html">
+            <div class="services-background"><img src="img/popular-4.svg" width="107" height="65" alt="Иконка раздела">
             </div>
             <h3 class="services-subtitle">Фитнес-браслеты</h3>
           </a>
         </li>
-        <li class="services"> <a class="link services-link" href="blank.html">
-            <div class="services-background"><img src="img/popular-5.svg" alt="Иконка раздела">
+        <li class="services"> <a class="link services-link" href="catalog.html">
+            <div class="services-background"><img src="img/popular-5.svg" width="56" height="98" alt="Иконка раздела">
             </div>
             <h3 class="services-subtitle">Умные часы</h3>
           </a>
         </li>
-        <li class="services"> <a class="link services-link" href="blank.html">
-            <div class="services-background"><img src="img/popular-6.svg" alt="Иконка раздела">
+        <li class="services"> <a class="link services-link" href="catalog.html">
+            <div class="services-background"><img src="img/popular-6.svg" width="132" height="69" alt="Иконка раздела">
             </div>
             <h3 class="services-subtitle">Квадрокоптеры</h3>
           </a>
@@ -380,5 +381,5 @@
     <button class="button-closed" type="button" aria-label="Закрыть"></button>
   </section>
 
-
+</body>
 </html>
